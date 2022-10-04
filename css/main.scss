@@ -1,0 +1,34 @@
+/* 
+* Main stylesheet for Layers of Vision
+* This is the SCSS file. CSS will be generated and minified.
+*/
+
+/*
+* Table of Contents
+*
+* 1. Globals
+* 2. Homepage
+* 3. Main
+* 4. Media queries
+* 5. Dark/Light
+*/
+
+/* 1. Globals */
+
+body {
+    background: #f8f8f8;
+}
+
+/* 2. Homepage */
+
+/* 3. Main */
+
+/* 4. Media queries */
+
+/* 5. Dark/Light */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #000;
+    }
+}
