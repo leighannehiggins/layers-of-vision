@@ -15,8 +15,8 @@
         <meta name="twitter:site" content="@">
 
         <link rel="icon" href="" type="image/x-icon">
-        
-        <link rel="stylesheet" href="/css/main.min.css">
+        <!-- TODO - GF 04/10/2023 - Change to /css/main.min.css -->
+        <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
         <header>
@@ -34,10 +34,48 @@
                 </ul>
             </nav>
         </header>
-        <main id="main"></main>
-        <footer></footer>
+        <main id="main">
+            <div class="intro" id="intro"></div>
+            <div class="block-small" id="audio">
+                <!-- Audio block -->
+                <figure>
+                    <figcaption>Caption/Label for the audio file:</figcaption>
+                    <audio controls src="/media/file.mp3">
+                            <a href="/media/file.mp3">
+                                Download audio
+                            </a>
+                    </audio>
+                </figure>
+            </div>
+            <div class="block" id="where-we-are">
+                <h2>Where are we?</h2>
+                <p>Address</p>
+                <p><a href="/visitor-info/">Find out more<span class="sr-only"> on the visitor info page</span></a></p>
+            </div>
+        </main>
+        <footer>
+            <div class="kings-logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <!-- Dark/Light mode switcher -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+          </label>
+          <em>Toggle Dark/Light Mode</em>
+        </div>
+        
 
         <!-- 03/10/2022 GF: Add JS here if needed -->
-        <!-- <script src=""></script> -->
+        <script src="js/main.js"></script>
     </body>
 </html>
