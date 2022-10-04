@@ -6,6 +6,7 @@
 /*
 * Table of Contents
 *
+* 0. Variables
 * 1. Globals
 * 2. Homepage
 * 3. Main
@@ -13,10 +14,40 @@
 * 5. Dark/Light
 */
 
+/* 0. Variables */
+
+// Colours
+
+$primary: #000000;
+$secondary: #f8f8f8;
+
+/*
+* GF 04/10/2023:
+* Article on dark/light mode using CSS variables
+* https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+*/
+
+
 /* 1. Globals */
 
 body {
-    background: #f8f8f8;
+    background: $secondary;
+}
+
+// Skip content button
+.skip-link {
+    background: $primary;
+    color: $secondary;
+    left: 50%;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+// 
+  
+.skip-link:focus {
+    transform: translateY(0%);
 }
 
 /* 2. Homepage */
@@ -29,6 +60,6 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: #000;
+        background: $primary;
     }
 }
