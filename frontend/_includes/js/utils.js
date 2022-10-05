@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 const path = require("node:path");
 const sass = require("sass");
 const debug = require("debug")("Eleventy:KDL");

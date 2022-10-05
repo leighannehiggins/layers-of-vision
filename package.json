@@ -1,8 +1,8 @@
 {
-  "name": "thornton",
+  "name": "LOV",
   "version": "0.1.0",
-  "description": "Alice Thornton's Books research project",
-  "homepage": "https://github.com/kingsdigitallab/thornton#readme",
+  "description": "Layer of Vision",
+  "homepage": "https://github.com/kingsdigitallab/layersofvision#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kingsdigitallab/thornton.git"
@@ -52,5 +52,8 @@
     "frontend",
     "osnap",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "lint": "^0.7.0"
+  }
 }
