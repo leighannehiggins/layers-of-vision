@@ -1,6 +1,6 @@
 ---
 description: "Layers of Vision is an art exhibition that explores the experiences and perspectives of blind and partially sighted (BPS) artists living in a world made for sighted people."
-pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
+pageImageWebPath: "/layers-of-vision/assets/img/logos/lov-temp-logo.png"
 ---
 <!DOCTYPE html>
 <html lang="en-GB">
@@ -10,10 +10,6 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="King's Digital Lab, King's College London">
     <meta name="description" content="{{ description }}">
-    {% comment %}
-      TODO: override the og: for individual pages (e.g. blog posts will have its own image, desc)
-      TODO: Add twitter meta?
-    {% endcomment %}
     <meta property="og:image" content="{{ metadata.live_domain }}{{ pageImageWebPath }}">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:title" content="{{ title }}">
@@ -24,7 +20,7 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
       <meta name="twitter:site" content="@">
     {% endcomment %}
 
-    <link rel="icon" href="{{ '/assets/img/logos/lov-temp-logo.png' | url }}" type="image/x-icon">
+    <link rel="icon" href="{{ '/layers-of-vision/assets/img/logos/lov-temp-logo.png' | url }}" type="image/x-icon">
     <title>{{ title }}
       |
       {{ metadata.title }}
@@ -32,8 +28,8 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
     {% comment %}
       generated from assets/css/main.scss
     {% endcomment %}
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}?ts={{ "now" | date: "%s" }}">
-    <script src="{{ '/assets/js/navbar-toggle.js' | url }}?ts={{ "now" | date: "%s" }}"></script>
+    <link rel="stylesheet" href="{{ '/layers-of-vision/assets/css/main.css' | url }}?ts={{ "now" | date: "%s" }}">
+    <script src="{{ '/layers-of-vision/assets/js/navbar-toggle.js' | url }}?ts={{ "now" | date: "%s" }}"></script>
   </head>
   <body class="{{ body_class }}">
     {% include "header.html" %}
@@ -59,6 +55,6 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
     </div>
 
     <!-- JS -->
-    <script src="/assets/js/main.js"></script>
+    <script src="/layers-of-vision/assets/js/main.js"></script>
   </body>
 </html>
