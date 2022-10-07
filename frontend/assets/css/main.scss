@@ -9,10 +9,12 @@
 * 0. Variables
 * 1. Globals
 * 2. Homepage
-* 3. Main
-* 4. Media (Image, Audio, Video, etc.)
-* 5. Media queries
-* 6. Dark/Light
+* 3. Navigation
+* 4. Main
+* 5. Media (Image, Audio, Video, etc.)
+* 6. Media queries
+* 7. Dark/Light
+* 8. Imports
 */
 
 /* 0. Variables */
@@ -21,8 +23,8 @@
 // Setting themes with variables
 
 :root {
-  --primary: #001923;
-  --secondary: #eefdfd;
+  --primary: #001923; // rgb(0, 25, 35)
+  --secondary: #eefdfd; // rgb(238, 253, 253)
 
   --font-color: #001923;
   --text-anchor: teal;
@@ -36,9 +38,6 @@
   --text-anchor: orange;
 }
 
-$primary: #001923; // rgb(0, 25, 35)
-$secondary: #eefdfd; // rgb(238, 253, 253)
-
 /*
 * GF 04/10/2023:
 * Article on dark/light mode using CSS variables
@@ -51,6 +50,7 @@ body {
   background: var(--secondary);
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 175%;
 }
 
 a {
@@ -65,11 +65,28 @@ a {
   left: 50%;
   padding: 4px;
   position: absolute;
-  transform: translateY(-100%);
+  transform: translateY(-120%);
 }
 
 .skip-link:focus {
   transform: translateY(0%);
+}
+
+// Buttons
+button,
+.button {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    cursor: pointer;
+  }
 }
 
 // Visibility classes
@@ -86,17 +103,79 @@ a {
 
 /* 2. Homepage */
 
-/* 3. Main */
+/* 3. Navigation */
 
-/* 4. Media (Image, Audio, Video, etc.) */
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-audio {
-  border: 1px solid var(--text-anchor);
+    li {
+      display: block;
+
+      a {
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        display: block;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+          background-color: var(--primary);
+          border: 1px solid var(--secondary);
+          color: var(--secondary);
+        }
+      }
+    }
+  }
 }
 
-/* 5. Media queries */
+/* 4. Main */
 
-/* 6. Dark/Light */
+main,
+.main {
+  padding: 1em;
+}
+
+.block {
+  margin: 1em auto;
+  max-width: 900px;
+}
+
+.intro {
+  font-size: 2em;
+}
+
+/* 5. Media (Image, Audio, Video, etc.) */
+
+audio {
+  border: 1px solid var(--primary);
+  margin: 1em 0;
+  width: 100%;
+}
+
+figure {
+  margin: 2em 0;
+}
+
+/* 6. Media queries */
+
+@media screen and (min-width: 1024px) {
+  .main-nav {
+    text-align: right;
+  }
+
+  nav {
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* 7. Dark/Light */
 
 // Switcher
 
@@ -182,6 +261,6 @@ input:checked + .slider:before {
   }
 }
 
-/* Imports */
+/* 8. Imports */
 
 @import "fonts";

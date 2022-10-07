@@ -1,6 +1,6 @@
 ---
 description: "Layers of Vision is an art exhibition that explores the experiences and perspectives of blind and partially sighted (BPS) artists living in a world made for sighted people."
-pageImageWebPath: "/layers-of-vision/assets/img/logos/lov-temp-logo.png"
+pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
 ---
 <!DOCTYPE html>
 <html lang="en-GB">
@@ -20,7 +20,7 @@ pageImageWebPath: "/layers-of-vision/assets/img/logos/lov-temp-logo.png"
       <meta name="twitter:site" content="@">
     {% endcomment %}
 
-    <link rel="icon" href="{{ '/layers-of-vision/assets/img/logos/lov-temp-logo.png' | url }}" type="image/x-icon">
+    <link rel="icon" href="{{ '/assets/img/logos/lov-temp-logo.png' | url }}" type="image/x-icon">
     <title>{{ title }}
       |
       {{ metadata.title }}
@@ -28,21 +28,19 @@ pageImageWebPath: "/layers-of-vision/assets/img/logos/lov-temp-logo.png"
     {% comment %}
       generated from assets/css/main.scss
     {% endcomment %}
-    <link rel="stylesheet" href="{{ '/layers-of-vision/assets/css/main.css' | url }}?ts={{ "now" | date: "%s" }}">
-    <script src="{{ '/layers-of-vision/assets/js/navbar-toggle.js' | url }}?ts={{ "now" | date: "%s" }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}?ts={{ "now" | date: "%s" }}">
+    <script src="{{ '/assets/js/navbar-toggle.js' | url }}?ts={{ "now" | date: "%s" }}"></script>
   </head>
   <body class="{{ body_class }}">
     {% include "header.html" %}
-    <section class="section">
-      <div class="container">
+    <main id="main">
+      <div class="block">
         <h1 class="title">
           {{ title }}
         </h1>
-        <div class="content {{ tags }}">
-          {{ content }}
-        </div>
+        {{ content }}
       </div>
-    </section>
+    </main>
     {% include "footer.html" %}
 
     <!-- Dark/Light mode switcher -->
@@ -55,6 +53,6 @@ pageImageWebPath: "/layers-of-vision/assets/img/logos/lov-temp-logo.png"
     </div>
 
     <!-- JS -->
-    <script src="/layers-of-vision/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
