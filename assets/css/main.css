@@ -92,6 +92,7 @@ button:hover,
 /* 2. Homepage */
 /* 3. Navigation */
 nav ul {
+  font-weight: bold;
   list-style: none;
   margin: 0;
   padding: 0;
