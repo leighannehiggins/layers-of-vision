@@ -8,10 +8,12 @@
 * 0. Variables
 * 1. Globals
 * 2. Homepage
-* 3. Main
-* 4. Media (Image, Audio, Video, etc.)
-* 5. Media queries
-* 6. Dark/Light
+* 3. Navigation
+* 4. Main
+* 5. Media (Image, Audio, Video, etc.)
+* 6. Media queries
+* 7. Dark/Light
+* 8. Imports
 */
 /* 0. Variables */
 :root {
@@ -38,6 +40,7 @@ body {
   background: var(--secondary);
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 175%;
 }
 
 a {
@@ -50,11 +53,27 @@ a {
   left: 50%;
   padding: 4px;
   position: absolute;
-  transform: translateY(-100%);
+  transform: translateY(-120%);
 }
 
 .skip-link:focus {
   transform: translateY(0%);
+}
+
+button,
+.button {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+}
+button:hover,
+.button:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  cursor: pointer;
 }
 
 .sr-only {
@@ -67,14 +86,64 @@ a {
 }
 
 /* 2. Homepage */
-/* 3. Main */
-/* 4. Media (Image, Audio, Video, etc.) */
-audio {
-  border: 1px solid var(--text-anchor);
+/* 3. Navigation */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: block;
+}
+nav ul li a {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
 }
 
-/* 5. Media queries */
-/* 6. Dark/Light */
+/* 4. Main */
+main,
+.main {
+  padding: 1em;
+}
+
+.block {
+  margin: 1em auto;
+  max-width: 900px;
+}
+
+.intro {
+  font-size: 2em;
+}
+
+/* 5. Media (Image, Audio, Video, etc.) */
+audio {
+  border: 1px solid var(--primary);
+  margin: 1em 0;
+  width: 100%;
+}
+
+figure {
+  margin: 2em 0;
+}
+
+/* 6. Media queries */
+@media screen and (min-width: 1024px) {
+  .main-nav {
+    text-align: right;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+}
+/* 7. Dark/Light */
 /* Ref: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 /* Simple css to style it like a toggle switch */
 .theme-switch-wrapper {
@@ -150,11 +219,11 @@ input:checked + .slider:before {
     --text-anchor: teal;
   }
 }
-/* Imports */
+/* 8. Imports */
 /* Custom fonts */
 @font-face {
   font-family: "Atkinson Hyperlegible";
-  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf") format("woff2");
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf") format("woff2");
 }
 @font-face {
   font-family: "Atkinson Hyperlegible";
