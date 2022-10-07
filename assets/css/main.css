@@ -15,16 +15,16 @@
 */
 /* 0. Variables */
 :root {
-  --primary: #000000;
-  --secondary: #f8f8f8;
-  --font-color: #000000;
+  --primary: #001923;
+  --secondary: #eefdfd;
+  --font-color: #001923;
   --text-anchor: teal;
 }
 
 [data-theme=dark] {
-  --primary: #f8f8f8;
-  --secondary: #000000;
-  --font-color: #f8f8f8;
+  --primary: #eefdfd;
+  --secondary: #001923;
+  --font-color: #eefdfd;
   --text-anchor: orange;
 }
 
@@ -37,6 +37,7 @@
 body {
   background: var(--secondary);
   color: var(--font-color);
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 a {
@@ -137,15 +138,37 @@ input:checked + .slider:before {
 /* Detect user default system or user agent for light/dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #f8f8f8;
-    --secondary: #000000;
-    --font-color: #f8f8f8;
+    --primary: #eefdfd;
+    --secondary: #001923;
+    --font-color: #eefdfd;
     --text-anchor: orange;
   }
   [data-theme=dark] {
-    --primary: #000000;
-    --secondary: #f8f8f8;
-    --font-color: #000000;
+    --primary: #001923;
+    --secondary: #eefdfd;
+    --font-color: #001923;
     --text-anchor: teal;
   }
+}
+/* Imports */
+/* Custom fonts */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf") format("woff2");
+  font-style: italic;
+  font-weight: 700;
 }
