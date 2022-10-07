@@ -8,7 +8,7 @@ eleventyNavigation:
 
 <div class="intro">Join us on our journey in engaging with a world made for sighted people</div>
 
-<a class="button">Find out more</a>
+<a class="button" href="#">Find out more</a>
 
 <!-- Audio block -->
 <figure>
