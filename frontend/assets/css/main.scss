@@ -55,6 +55,11 @@ body {
 
 a {
   color: var(--text-anchor);
+
+  &:focus {
+    border: 1px solid var(--text-anchor);
+    box-sizing: border-box;
+  }
 }
 
 // Skip content button
@@ -115,7 +120,7 @@ nav {
       display: block;
 
       a {
-        border: 1px solid var(--primary);
+        border: 2px solid var(--primary);
         color: var(--primary);
         display: block;
         padding: 1rem 1.5rem;
@@ -123,7 +128,7 @@ nav {
 
         &:hover {
           background-color: var(--primary);
-          border: 1px solid var(--secondary);
+          border: 2px solid var(--secondary);
           color: var(--secondary);
         }
       }
@@ -145,6 +150,7 @@ main,
 
 .intro {
   font-size: 2em;
+  font-weight: bold;
 }
 
 /* 5. Media (Image, Audio, Video, etc.) */
