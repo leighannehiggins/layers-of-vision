@@ -1,16 +1,16 @@
 {
-  "name": "LOV",
+  "name": "LoV",
   "version": "0.1.0",
   "description": "Layer of Vision",
   "homepage": "https://github.com/kingsdigitallab/layersofvision#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kingsdigitallab/thornton.git"
+    "url": "git+https://github.com/kingsdigitallab/layers-of-vision.git"
   },
   "author": "King's Digital Lab",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/kingsdigitallab/thornton/issues"
+    "url": "https://github.com/kingsdigitallab/layers-of-vision/issues"
   },
   "//scripts": {
     "compose": "trap 'echo Stopped; exit 0' SIGINT; docker-compose",
