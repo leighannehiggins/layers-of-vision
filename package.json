@@ -54,6 +54,6 @@
     "tests"
   ],
   "dependencies": {
-    "lint": "^0.7.0"
+    "lint": "^1.1.2"
   }
 }
