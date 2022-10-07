@@ -17,3 +17,10 @@ eleventyNavigation:
     <a href="/media/file.mp3"> Download audio </a>
   </audio>
 </figure>
+
+<h2>Where we are</h2>
+
+<p>Arcade, Bush House<br>
+King's College London</p>
+
+<a class="button" href="#">Getting here</a>

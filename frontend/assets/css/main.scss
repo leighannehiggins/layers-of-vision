@@ -166,6 +166,20 @@ figure {
   margin: 2em 0;
 }
 
+// KCL Logo
+.kcl-logo {
+  svg {
+    max-width: 200px;
+  }
+}
+.kcl-rect {
+  fill: var(--primary);
+}
+
+.kcl-text {
+  fill: var(--secondary);
+}
+
 /* 6. Media queries */
 
 @media screen and (min-width: 1024px) {
