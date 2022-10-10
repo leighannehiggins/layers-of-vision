@@ -71,6 +71,10 @@ a {
   }
 }
 
+header {
+  position: relative;
+}
+
 // Skip content button
 
 .skip-link {
@@ -284,6 +288,10 @@ figure {
 
 @media screen and (min-width: 1024px) {
   .main-nav {
+    background: var(--secondary);
+    position: fixed;
+    top: 0;
+    right: 0;
     text-align: right;
   }
 
