@@ -41,6 +41,8 @@ body {
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 175%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -107,9 +109,9 @@ nav ul li a {
   padding: 1rem 1.5rem;
   text-decoration: none;
 }
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
   background-color: var(--primary);
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--primary);
   color: var(--secondary);
 }
 
@@ -150,6 +152,30 @@ figure {
 
 .kcl-text {
   fill: var(--secondary);
+}
+
+.lov-logo h1,
+.lov-logo h2 {
+  margin: 0;
+}
+.lov-logo svg {
+  max-width: 210px;
+}
+.lov-logo svg .primary-color {
+  fill: var(--primary);
+}
+.lov-logo svg .secondary-color {
+  fill: var(--secondary);
+}
+.lov-logo svg .logo-font {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+}
+.lov-logo svg .logo-font-large {
+  font-size: 48px;
+}
+.lov-logo svg .logo-font-medium {
+  font-size: 32px;
 }
 
 /* 6. Media queries */
