@@ -30,6 +30,11 @@
   --text-anchor: orange;
 }
 
+.invert {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
 /*
 * GF 04/10/2023:
 * Article on dark/light mode using CSS variables
@@ -53,6 +58,10 @@ a:focus {
   box-sizing: border-box;
 }
 
+header {
+  position: relative;
+}
+
 .skip-link {
   background: var(--primary);
   color: var(--secondary);
@@ -68,7 +77,7 @@ a:focus {
 
 button,
 .button {
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
   padding: 1rem;
@@ -77,9 +86,37 @@ button,
 button:hover,
 .button:hover {
   background-color: var(--primary);
-  border: 1px solid var(--secondary);
+  border: 2px solid var(--secondary);
   color: var(--secondary);
   cursor: pointer;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1em;
+  margin-top: 1em;
+}
+.row .col-9 {
+  grid-column: 1/10;
+}
+.row .col-9.invert {
+  border-bottom: 8px solid var(--secondary);
+  font-size: 75%;
+  padding: 1em;
+}
+.row .col-9.invert a {
+  color: var(--secondary);
+}
+.row .col-9.invert h3 {
+  margin-top: 0;
+}
+.row .col-9.invert p:last-child {
+  margin-bottom: 0;
+}
+.row .col-3 {
+  grid-column: 10/13;
+  text-align: right;
 }
 
 .sr-only {
@@ -115,6 +152,21 @@ nav ul li a:hover, nav ul li a.active {
   color: var(--secondary);
 }
 
+.footer-wrapper {
+  margin: 1rem auto;
+  max-width: 1132px;
+}
+.footer-wrapper .footer-nav {
+  font-size: 75%;
+}
+.footer-wrapper .footer-nav a {
+  padding: 0.75rem 1rem;
+}
+
+.tag-line {
+  font-size: 55%;
+}
+
 /* 4. Main */
 main,
 .main {
@@ -142,8 +194,11 @@ figure {
   margin: 2em 0;
 }
 
+.kcl-logo a {
+  display: block;
+}
 .kcl-logo svg {
-  max-width: 200px;
+  max-width: 100%;
 }
 
 .kcl-rect {
@@ -181,6 +236,10 @@ figure {
 /* 6. Media queries */
 @media screen and (min-width: 1024px) {
   .main-nav {
+    background: var(--secondary);
+    position: fixed;
+    top: 0;
+    right: 0;
     text-align: right;
   }
   nav ul li {
