@@ -1,8 +1,9 @@
 ---
-title: Accessibility Statement for My Default Site
+title: Accessibility Statement for Layers of Vision
+permalink: /accessibility/
 ---
 
-This statement applies to the My Default Site site (https://layersofvision.org/).
+This statement applies to the Layers of Vision site (https://layersofvision.org/).
 
 This website is run by [King's Digital Lab, King's College London (KDL)](https://kdl.kcl.ac.uk) in collaboration with the [King's Business School](https://www.kcl.ac.uk/business). We want as many people as possible to be able to use this website. For example, that means you should be able to:
 

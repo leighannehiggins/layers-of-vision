@@ -51,6 +51,8 @@ body {
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 175%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -127,9 +129,10 @@ nav {
         padding: 1rem 1.5rem;
         text-decoration: none;
 
-        &:hover {
+        &:hover,
+        &.active {
           background-color: var(--primary);
-          border: 2px solid var(--secondary);
+          border: 2px solid var(--primary);
           color: var(--secondary);
         }
       }
@@ -178,6 +181,38 @@ figure {
 
 .kcl-text {
   fill: var(--secondary);
+}
+
+// Lov Logo
+.lov-logo {
+  h1, h2 {
+    margin: 0;
+  }
+
+  svg {
+    max-width: 210px;
+
+    .primary-color {
+      fill: var(--primary);
+    }
+
+    .secondary-color {
+      fill: var(--secondary);
+    }
+
+    .logo-font {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      font-weight: 700;
+    }
+
+    .logo-font-large {
+      font-size: 48px;
+    }
+
+    .logo-font-medium {
+      font-size: 32px;
+    }
+  }
 }
 
 /* 6. Media queries */
