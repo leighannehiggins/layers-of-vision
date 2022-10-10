@@ -38,6 +38,13 @@
   --text-anchor: orange;
 }
 
+.invert {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+$kings-red: #e2231a;
+
 /*
 * GF 04/10/2023:
 * Article on dark/light mode using CSS variables
@@ -82,7 +89,7 @@ a {
 // Buttons
 button,
 .button {
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
   padding: 1rem;
@@ -90,9 +97,45 @@ button,
 
   &:hover {
     background-color: var(--primary);
-    border: 1px solid var(--secondary);
+    border: 2px solid var(--secondary);
     color: var(--secondary);
     cursor: pointer;
+  }
+}
+
+// Grid container
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1em;
+
+  margin-top: 1em;
+
+  .col-9 {
+    grid-column: 1/10;
+
+    &.invert {
+      border-bottom: 8px solid var(--secondary);
+      font-size: 75%;
+      padding: 1em;
+
+      a {
+        color: var(--secondary);
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .col-3 {
+    grid-column: 10/13;
+    text-align: right;
   }
 }
 
@@ -140,6 +183,23 @@ nav {
   }
 }
 
+.footer-wrapper {
+  margin: 1rem auto;
+  max-width: 1132px;
+
+  .footer-nav {
+    font-size: 75%;
+
+    a {
+      padding: .75rem 1rem;
+    }
+  }
+}
+
+.tag-line {
+  font-size: 55%;
+}
+
 /* 4. Main */
 
 main,
@@ -171,8 +231,12 @@ figure {
 
 // KCL Logo
 .kcl-logo {
+  a {
+    display: block;
+  }
+
   svg {
-    max-width: 200px;
+    max-width: 100%;
   }
 }
 .kcl-rect {
