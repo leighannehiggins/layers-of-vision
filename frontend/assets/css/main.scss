@@ -237,6 +237,15 @@ figure {
 .kcl-logo {
   a {
     display: block;
+
+    &:hover {
+      .kcl-rect {
+        fill: $kings-red;
+      }
+      .kcl-text {
+        fill: white;
+      }
+    }
   }
 
   svg {
@@ -300,6 +309,16 @@ figure {
       li {
         display: inline-block;
       }
+    }
+  }
+
+  // Notehead
+  .notehead {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    div {
+      grid-column: 2/2;
     }
   }
 }
