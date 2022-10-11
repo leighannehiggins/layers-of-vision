@@ -325,24 +325,22 @@ figure {
 
 /* 7. Dark/Light */
 
-// Switcher
+// Switcher 
 
 /* Ref: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
 /* Simple css to style it like a toggle switch */
 
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
+// .theme-switch-wrapper {
+//   display: flex;
+//   align-items: center;
+// }
 
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
-}
 .theme-switch {
+  border: 1px solid var(--primary);
   display: inline-block;
-  height: 34px;
+  height: 60px;
+  padding: 1rem;
   position: relative;
   width: 60px;
 }
@@ -351,43 +349,47 @@ figure {
   display: none;
 }
 
-.slider {
-  background-color: #ccc;
+.switch {
+  // background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  transition: 0.4s;
+  // transition: 0.4s;
+
+  svg {
+    fill: var(--primary);
+  }
 }
 
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-}
+// .slider:before {
+//   background-color: #fff;
+//   bottom: 4px;
+//   content: "";
+//   height: 26px;
+//   left: 4px;
+//   position: absolute;
+//   transition: 0.4s;
+//   width: 26px;
+// }
 
-input:checked + .slider {
-  background-color: #66bb6a;
-}
+// input:checked + .slider {
+//   background-color: #66bb6a;
+// }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: rotate(180deg);
 }
 
-.slider.round {
-  border-radius: 34px;
-}
+// .slider.round {
+//   border-radius: 34px;
+// }
 
-.slider.round:before {
-  border-radius: 50%;
-}
+// .slider.round:before {
+//   border-radius: 50%;
+// }
 
 /* Detect user default system or user agent for light/dark mode */
 // GF 04/10/2022 Disabled until I have a working switch
