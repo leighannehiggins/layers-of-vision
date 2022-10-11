@@ -9,7 +9,7 @@
   },
   "author": "King's Digital Lab",
   "license": "MPL-2.0",
-  "bugs": {
+  "bunpmgs": {
     "url": "https://github.com/kingsdigitallab/layers-of-vision/issues"
   },
   "//scripts": {
