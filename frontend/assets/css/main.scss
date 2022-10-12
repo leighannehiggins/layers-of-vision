@@ -140,17 +140,12 @@ button,
 
 .row {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 2em;
 
   margin-top: 1em;
 
   .col-9 {
-    grid-column: 1/10;
-
     &.invert {
-      // border-bottom: 8px solid var(--secondary);
-      font-size: 75%;
+      font-size: .875rem;
       padding: 1em;
 
       a {
@@ -165,10 +160,6 @@ button,
         margin-bottom: 0;
       }
     }
-  }
-  .col-3 {
-    grid-column: 10/13;
-    text-align: right;
   }
 }
 
@@ -316,7 +307,7 @@ video {
 
 // KCL Logo
 .kcl-logo {
-  padding-bottom: 2rem;
+  padding: 2rem;
 
   a {
     display: block;
@@ -395,6 +386,10 @@ video {
     }
   }
 
+  .kcl-logo {
+    padding: 0 0 2rem 0;
+  }
+
   // Notehead
   .notehead {
     display: grid;
@@ -414,6 +409,21 @@ video {
       }
     }
   }
+
+  .row {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 2em;
+
+    .col-9 {
+      grid-column: 1/10;
+    }
+
+    
+    .col-3 {
+      grid-column: 10/13;
+      text-align: right;
+    }
+  }
 }
 
 /* 7. Dark/Light */
@@ -425,6 +435,7 @@ video {
 /* Simple css to style it like a toggle switch */
 
 .theme-switch {
+  background: var(--secondary);
   border: 1px solid var(--primary);
   bottom: 0;
   display: inline-block;
