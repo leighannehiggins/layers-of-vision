@@ -2,10 +2,10 @@
 
 <nav class="main-nav" aria-label="Main navigation">
   <ul>
-    <li><a href="/" class="{% if '/' == page.url %}active{% endif %}">Home</a></li>
-    <li><a href="#">Find out more</a></li>
-    <li><a href="#">Artists</a></li>
-    <li><a href="#">Visitor info</a></li>
+    <li><a href="{{ '/' | url }}" class="{% if '/' == page.url %}active{% endif %}">Home</a></li>
+    <li><a href="{{ '/exhibition/' | url }}">The Exhibition</a></li>
+    <li><a href="{{ '/artists/' | url }}">Artists</a></li>
+    <li><a href="{{ '/visitors/' | url }}">Visitor info</a></li>
   </ul>
 </nav>
 
