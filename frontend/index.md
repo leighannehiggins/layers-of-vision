@@ -14,7 +14,7 @@ eleventyNavigation:
   </div>
 </div>
 
-<div class="intro">Engage in a world made for sighted people</div>
+<h2>Engage in a world made for sighted people</h2>
 
 <a class="button" href="#">Find out more</a>
 
@@ -39,7 +39,7 @@ eleventyNavigation:
 
 <h2>Where we are</h2>
 
-<p>Arcade, Bush House<br>
+<p class="large-font">Arcade, Bush House<br>
 King's College London</p>
 
 <a class="button" href="#">Getting here</a>
