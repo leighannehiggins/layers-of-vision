@@ -62,6 +62,12 @@ header {
   position: relative;
 }
 
+h2,
+h3,
+h4 {
+  margin: 1em 0 0.5em;
+}
+
 h2 {
   font-size: 4rem;
 }
@@ -72,6 +78,14 @@ h3 {
 
 h4 {
   font-size: 1.75rem;
+}
+
+.large-font {
+  font-size: 4rem;
+}
+
+p {
+  margin: 0 0 0.5em;
 }
 
 .skip-link {
@@ -115,7 +129,6 @@ button:hover,
   grid-column: 1/10;
 }
 .row .col-9.invert {
-  border-bottom: 8px solid var(--secondary);
   font-size: 75%;
   padding: 1em;
 }
@@ -171,7 +184,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .footer-wrapper {
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   max-width: 1132px;
 }
 .footer-wrapper .footer-nav {
@@ -313,10 +326,18 @@ video {
   .notehead {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 6rem;
+    margin-top: -7rem;
   }
   .notehead div {
-    border-top: 10px solid var(--primary);
     grid-column: 2/2;
+    text-align: right;
+  }
+  .notehead div p {
+    border-top: 10px solid var(--primary);
+    display: inline-block;
+    padding-top: 0.5rem;
+    text-align: left;
   }
 }
 /* 7. Dark/Light */
