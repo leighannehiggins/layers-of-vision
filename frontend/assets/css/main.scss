@@ -247,6 +247,15 @@ main,
   font-weight: bold;
 }
 
+.notehead {
+  div {
+    p {
+      border-top: 10px solid var(--primary);
+      padding-top: 0.5rem;
+    }
+  }
+}
+
 // Social
 
 .social {
@@ -404,9 +413,7 @@ video {
       grid-column: 2/2;
       text-align: right;
       p {
-        border-top: 10px solid var(--primary);
         display: inline-block;
-        padding-top: 0.5rem;
         text-align: left;
       }
     }
