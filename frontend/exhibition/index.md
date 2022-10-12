@@ -5,6 +5,4 @@ eleventyNavigation:
   order: 2
 ---
 
-## The Exhibition
-
 Lorem ipsum
