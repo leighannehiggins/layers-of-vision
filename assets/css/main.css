@@ -62,10 +62,15 @@ header {
   position: relative;
 }
 
+h1,
 h2,
 h3,
 h4 {
   margin: 1em 0 0.5em;
+}
+
+h1 {
+  font-size: 5.875rem;
 }
 
 h2 {
@@ -95,6 +100,7 @@ p {
   padding: 4px;
   position: absolute;
   transform: translateY(-120%);
+  z-index: 1000;
 }
 
 .skip-link:focus {
@@ -108,7 +114,7 @@ button,
   display: inline-block;
   font-size: 2rem;
   font-weight: 700;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
 }
 button:hover,
@@ -160,7 +166,7 @@ nav ul li a {
   border: 2px solid var(--primary);
   color: var(--primary);
   display: block;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
 }
 nav ul li a:hover, nav ul li a.active {
@@ -251,8 +257,7 @@ video {
 }
 .icon svg {
   fill: var(--primary);
-  max-width: 1.25rem;
-  max-height: 1.25rem;
+  width: 1.25rem;
 }
 .icon:hover {
   background: var(--primary);
@@ -355,14 +360,14 @@ video {
 /* Simple css to style it like a toggle switch */
 .theme-switch {
   background: var(--secondary);
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   bottom: 0;
   display: inline-block;
-  height: 4rem;
-  padding: 1rem;
+  height: 3rem;
+  padding: 0.5rem;
   position: fixed;
   right: 0;
-  width: 4rem;
+  width: 3rem;
 }
 
 .theme-switch input {
