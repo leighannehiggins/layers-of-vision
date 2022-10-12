@@ -121,15 +121,9 @@ button:hover,
 
 .row {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 2em;
   margin-top: 1em;
 }
-.row .col-9 {
-  grid-column: 1/10;
-}
 .row .col-9.invert {
-  font-size: 75%;
   padding: 1em;
 }
 .row .col-9.invert a {
@@ -140,10 +134,6 @@ button:hover,
 }
 .row .col-9.invert p:last-child {
   margin-bottom: 0;
-}
-.row .col-3 {
-  grid-column: 10/13;
-  text-align: right;
 }
 
 .sr-only {
@@ -187,15 +177,16 @@ nav ul li a:hover, nav ul li a.active {
   margin: 1rem auto 0;
   max-width: 1132px;
 }
-.footer-wrapper .footer-nav {
-  font-size: 75%;
-}
 .footer-wrapper .footer-nav a {
   padding: 0.75rem 1rem;
 }
+.footer-wrapper h3 {
+  font-size: 1.25rem;
+}
 
 .tag-line {
-  font-size: 55%;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
 /* 4. Main */
@@ -214,7 +205,7 @@ main,
   font-weight: bold;
 }
 
-.social h4,
+.social h3,
 .social ul,
 .social li {
   display: inline-block;
@@ -264,7 +255,7 @@ video {
 }
 
 .kcl-logo {
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 .kcl-logo a {
   display: block;
@@ -323,6 +314,9 @@ video {
   nav ul li {
     display: inline-block;
   }
+  .kcl-logo {
+    padding: 0 0 2rem 0;
+  }
   .notehead {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -339,11 +333,23 @@ video {
     padding-top: 0.5rem;
     text-align: left;
   }
+  .row {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 2em;
+  }
+  .row .col-9 {
+    grid-column: 1/10;
+  }
+  .row .col-3 {
+    grid-column: 10/13;
+    text-align: right;
+  }
 }
 /* 7. Dark/Light */
 /* Ref: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 /* Simple css to style it like a toggle switch */
 .theme-switch {
+  background: var(--secondary);
   border: 1px solid var(--primary);
   bottom: 0;
   display: inline-block;
