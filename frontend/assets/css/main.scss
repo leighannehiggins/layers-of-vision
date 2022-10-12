@@ -76,8 +76,10 @@ header {
 }
 
 // Headings
-h2, h3, h4 {
-  margin: 1em 0 .5em;
+h2,
+h3,
+h4 {
+  margin: 1em 0 0.5em;
 }
 
 h2 {
@@ -97,7 +99,7 @@ h4 {
 }
 
 p {
-  margin: 0 0 .5em;
+  margin: 0 0 0.5em;
 }
 
 // Skip content button
@@ -314,7 +316,6 @@ video {
 
 // KCL Logo
 .kcl-logo {
-
   padding-bottom: 2rem;
 
   a {
@@ -408,7 +409,7 @@ video {
       p {
         border-top: 10px solid var(--primary);
         display: inline-block;
-        padding-top: .5rem;
+        padding-top: 0.5rem;
         text-align: left;
       }
     }
