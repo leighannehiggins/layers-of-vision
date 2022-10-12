@@ -8,7 +8,7 @@ eleventyNavigation:
 
 <h2>Engaging in a world made for sighted people</h2>
 
-<a class="button" href="#">Find out more</a>
+<a class="button" href="exhibition/">Find out more</a>
 
 <!-- Audio block -->
 <figure>
@@ -34,4 +34,4 @@ eleventyNavigation:
 <p class="large-font">Arcade, Bush House<br>
 King's College London</p>
 
-<a class="button" href="#">Getting here</a>
+<a class="button" href="visitors/">Getting here</a>
