@@ -244,8 +244,9 @@ main,
 // Social
 
 .social {
-
-  h4, ul, li {
+  h4,
+  ul,
+  li {
     display: inline-block;
     margin: 0;
   }
@@ -256,7 +257,7 @@ main,
 
     li {
       border: 1px solid var(--primary);
-      margin-left: .5rem;
+      margin-left: 0.5rem;
 
       svg {
         vertical-align: middle;
@@ -283,12 +284,12 @@ video {
 
 .icon {
   display: block;
-  padding: .5rem;
+  padding: 0.5rem;
 
   svg {
     fill: var(--primary);
     max-width: 1.25rem;
-    max-height: 1.25rem; 
+    max-height: 1.25rem;
   }
 
   &:hover {
@@ -393,7 +394,7 @@ video {
 
 /* 7. Dark/Light */
 
-// Switcher 
+// Switcher
 
 /* Ref: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
