@@ -6,7 +6,15 @@ eleventyNavigation:
   order: 1
 ---
 
-<div class="intro">Join us on our journey in engaging with a world made for sighted people</div>
+<div class="notehead">
+  <div>
+    <p><strong>A King's College London Exhibition</strong><br>
+    Until 16 December 2022<br>
+    As part of UK Disability History Month</p>
+  </div>
+</div>
+
+<div class="intro">Engage in a world made for sighted people</div>
 
 <a class="button" href="#">Find out more</a>
 
@@ -16,6 +24,17 @@ eleventyNavigation:
   <audio controls src="/media/file.mp3">
     <a href="/media/file.mp3"> Download audio </a>
   </audio>
+</figure>
+
+<!-- Video block -->
+<figure>
+  <figcaption>Caption/Label for the video file:</figcaption>
+  <video controls>
+    <source src="/media/video.webm" type="video/webm">
+    <source src="/media/video.mp4" type="video/mp4">
+    Download the <a href="/media/video.webm">WEBM</a>
+    or <a href="/media/video.mp4">MP4</a> video.
+</video>
 </figure>
 
 <h2>Where we are</h2>

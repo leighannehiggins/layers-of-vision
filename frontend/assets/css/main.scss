@@ -57,7 +57,7 @@ body {
   background: var(--secondary);
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 175%;
+  font-size: 1.25rem;
   margin: 0;
   padding: 0;
 }
@@ -73,6 +73,20 @@ a {
 
 header {
   position: relative;
+}
+
+// Headings
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
 }
 
 // Skip content button
@@ -96,6 +110,8 @@ button,
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
   padding: 1rem;
   text-decoration: none;
 
@@ -187,6 +203,10 @@ nav {
   }
 }
 
+.main-nav {
+  font-size: 2rem;
+}
+
 .footer-wrapper {
   margin: 1rem auto;
   max-width: 1132px;
@@ -217,20 +237,67 @@ main,
 }
 
 .intro {
-  font-size: 2em;
+  font-size: 4rem;
   font-weight: bold;
+}
+
+// Social
+
+.social {
+
+  h4, ul, li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      border: 1px solid var(--primary);
+      margin-left: .5rem;
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
 }
 
 /* 5. Media (Image, Audio, Video, etc.) */
 
 audio {
   border: 1px solid var(--primary);
-  margin: 1em 0;
+  margin: 2em 0;
   width: 100%;
 }
 
 figure {
   margin: 2em 0;
+}
+
+video {
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  padding: .5rem;
+
+  svg {
+    fill: var(--primary);
+    max-width: 1.25rem;
+    max-height: 1.25rem; 
+  }
+
+  &:hover {
+    background: var(--primary);
+
+    svg {
+      fill: var(--secondary);
+    }
+  }
 }
 
 // KCL Logo
@@ -318,6 +385,7 @@ figure {
     grid-template-columns: repeat(2, 1fr);
 
     div {
+      border-top: 10px solid var(--primary);
       grid-column: 2/2;
     }
   }
