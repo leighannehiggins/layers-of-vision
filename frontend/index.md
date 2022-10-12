@@ -14,7 +14,7 @@ eleventyNavigation:
   </div>
 </div>
 
-<h2>Engage in a world made for sighted people</h2>
+<h2>Engaging in a world made for sighted people</h2>
 
 <a class="button" href="#">Find out more</a>
 
