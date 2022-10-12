@@ -388,9 +388,18 @@ video {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    margin-bottom: 6rem;
+    margin-top: -7rem;
+
     div {
-      border-top: 10px solid var(--primary);
       grid-column: 2/2;
+      text-align: right;
+      p {
+        border-top: 10px solid var(--primary);
+        display: inline-block;
+        padding-top: .5rem;
+        text-align: left;
+      }
     }
   }
 }
