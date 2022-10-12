@@ -250,7 +250,9 @@ main,
 .notehead {
   div {
     p {
-      border-top: 10px solid var(--primary);
+      border-top: 15px solid var(--primary);
+      font-size: 2rem;
+      margin-right: 1rem;
       padding-top: 0.5rem;
     }
   }
@@ -406,8 +408,8 @@ video {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    margin-bottom: 6rem;
-    margin-top: -7rem;
+    margin-bottom: 5rem;
+    margin-top: -6rem;
 
     div {
       grid-column: 2/2;

@@ -6,14 +6,6 @@ eleventyNavigation:
   order: 1
 ---
 
-<div class="notehead">
-  <div>
-    <p><strong>A King's College London Exhibition</strong><br>
-    Until 16 December 2022<br>
-    As part of UK Disability History Month</p>
-  </div>
-</div>
-
 <h2>Engaging in a world made for sighted people</h2>
 
 <a class="button" href="#">Find out more</a>

@@ -34,6 +34,15 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
   <body class="{{ body_class }}">
     {% include "header.liquid" %}
     <main id="main">
+      {% if permalink == "/" %}
+      <div class="notehead">
+        <div>
+          <p><strong>A King's College London Exhibition</strong><br>
+          Until 16 December 2022<br>
+          As part of UK Disability History Month</p>
+        </div>
+      </div>
+      {% endif %}
       <div class="block">
         {% comment %}
           If Homepage, don't show page title
