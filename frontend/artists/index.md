@@ -7,6 +7,4 @@ eleventyNavigation:
 
 lorem ipsum
 
-{% include 'team.md', team: 'research' %}
-
-{% include 'team.md', team: 'sdt' %}
+{% include 'team.md', team: 'artists' %}

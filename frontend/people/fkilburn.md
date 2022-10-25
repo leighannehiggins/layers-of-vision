@@ -1,0 +1,16 @@
+---
+firstName: Fae
+lastName: Kilburn
+image: /assets/img/people/fkilburn.jpg
+workTitle: Breaking Down Barriers
+year: 2022
+workType: Installation of 3D prints and scaffolding
+workSize: (250cm x 200cm x 100cm)
+order: 2
+teams:
+  - artists
+---
+
+This installation is a triptych of scaled down 3D printed figures of the artist moving through a delineated space. Using the accuracy of digital technology, this piece grants access for the first time for the blind artist to his own body. The figures are framed with layers of scaffolding that are a parody of gallery casements. Through granting every visitor, sight disabled or otherwise, access to the touchable figures, it offers something close to equality of experience.
+
+## Artist bio

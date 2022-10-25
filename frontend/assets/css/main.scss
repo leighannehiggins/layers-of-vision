@@ -27,7 +27,8 @@
   --secondary: #eefdfd; // rgb(238, 253, 253)
 
   --font-color: #001923;
-  --text-anchor: teal;
+  // --text-anchor: teal;
+  --text-anchor: --primary;
 }
 
 [data-theme="dark"] {
@@ -35,7 +36,8 @@
   --secondary: #001923;
 
   --font-color: #eefdfd;
-  --text-anchor: orange;
+  // --text-anchor: orange;
+  --text-anchor: --primary;
 }
 
 .invert {
@@ -103,6 +105,41 @@ h4 {
 
 .large-font {
   font-size: 64px;
+}
+
+ol {
+  counter-reset: a;
+  list-style: none;
+  margin-left: 0;
+  position: relative;
+
+  > li {
+    counter-increment: a;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 40px;
+
+    &::before {
+      border: 2px solid var(--primary);
+      box-sizing: border-box;
+      content: counter(a, decimal) "";
+      display: inline-block;
+      font-size: 40px;
+      height: 70px;
+      line-height: 1;
+      margin-right: 24px;
+      padding: 14px 20px;
+      text-align: center;
+      width: 70px;
+    }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 p {
@@ -556,7 +593,8 @@ input:checked + .slider:before {
     --secondary: #001923;
 
     --font-color: #eefdfd;
-    --text-anchor: orange;
+    --text-anchor: #eefdfd;
+    // --text-anchor: orange;
   }
 
   [data-theme="dark"] {
@@ -564,7 +602,8 @@ input:checked + .slider:before {
     --secondary: #eefdfd;
 
     --font-color: #001923;
-    --text-anchor: teal;
+    --text-anchor: #001923;
+    // --text-anchor: teal;
   }
 }
 
