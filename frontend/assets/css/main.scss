@@ -88,7 +88,8 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 64px;
+  line-height: 74px;
 }
 
 h3 {
@@ -200,7 +201,7 @@ nav {
         border: 2px solid var(--primary);
         color: var(--primary);
         display: block;
-        padding: 11px 15px;
+        padding: 11px 21px;
         text-decoration: none;
 
         &:hover,
@@ -219,12 +220,12 @@ nav {
 }
 
 .footer-wrapper {
-  margin: 1rem auto 0;
-  max-width: 1132px;
+  margin: 30px auto 0;
+  max-width: 1134px;
 
   .footer-nav {
     a {
-      padding: 0.5rem 0.9375rem;
+      padding: 8px 15px;
     }
 
     li:first-child {
@@ -334,7 +335,7 @@ video {
   padding: 30px;
 
   a {
-    display: block;
+    display: flex;
 
     &:hover {
       .kcl-rect {
@@ -434,7 +435,7 @@ video {
   }
 
   .row {
-    grid-template-columns: auto 150px;
+    grid-template-columns: auto 200px;
     grid-column-gap: 30px;
 
     .col-left {
@@ -458,8 +459,8 @@ video {
 
 .theme-switch {
   background: var(--secondary);
-  border: 2px solid var(--primary);
-  bottom: 0;
+  border: 1px solid var(--primary);
+  bottom: 50%;
   display: inline-block;
   height: 3rem;
   padding: 0.5rem;
