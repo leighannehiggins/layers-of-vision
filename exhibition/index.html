@@ -2,7 +2,7 @@
 <html lang="en-GB">
   <head>
     <meta charset="utf-8">
-    <!-- Built with 11ty - 2022-10-12 16:09 -->
+    <!-- Built with 11ty - 2022-10-25 15:37 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="King's Digital Lab, King's College London">
     <meta name="description" content="Layers of Vision is an art exhibition that explores the experiences and perspectives of blind and partially sighted (BPS) artists living in a world made for sighted people.">
@@ -18,10 +18,10 @@
       Layers of Vision
     </title>
     
-    <link rel="stylesheet" href="/layers-of-vision/assets/css/main.css?ts=1665590942">
-    <script src="/layers-of-vision/assets/js/navbar-toggle.js?ts=1665590942"></script>
+    <link rel="stylesheet" href="/layers-of-vision/assets/css/main.css?ts=1666712279">
+    <script src="/layers-of-vision/assets/js/navbar-toggle.js?ts=1666712279"></script>
   </head>
-  <body class="type-page slug-exhibition">
+  <body class="type-page slug-exhibition not-home">
     <header>
   <!-- Skip to content -->
   <a class="skip-link" href="#main">Skip to content</a>
@@ -49,7 +49,7 @@
 <nav class="main-nav" aria-label="Main navigation">
   <ul>
     <li><a href="/layers-of-vision/" class="">Home</a></li>
-    <li><a href="/layers-of-vision/exhibition/">The Exhibition</a></li>
+    <li><a href="/layers-of-vision/exhibition/" class="active">The Exhibition</a></li>
     <li><a href="/layers-of-vision/artists/">Artists</a></li>
     <li><a href="/layers-of-vision/visitors/">Visitor info</a></li>
   </ul>
@@ -67,32 +67,67 @@
             The Exhibition
           </h1>
         
-        <p>Lorem ipsum</p>
+        <p>Layers of Vision is an art exhibition that explores the experiences and perspectives of blind and partially sighted (BPS) artists living in a world made for sighted people. In meaningfully co-created and joyful ways, Layers of Vision raises attention to, and challenges, the barriers that people who are blind or have sight loss are facing in everyday life. It does so by
+exhibiting ten artworks that celebrate and creatively explore accessibility.</p>
+<p>Each artwork, in its own way, appreciates different forms of vision and features multisensory elements to foster engagement, stimulate discussions, and question common views and practices around access and disability inclusion in the arts and beyond.</p>
+<h2>Experiencing Layers of Vision</h2>
+<p>Feel, Follow, and Find your journey through Layers of Vision.</p>
+<p><button class="button disabled inverted">Feel</button></p>
+<p>the wall-mounted 3D map to experience a snapshot of the gallery space and exhibition layout.</p>
+<p><button class="button disabled inverted">Follow</button></p>
+<p>in an anticlockwise direction, our wayfinding signage on the floor to
+experience the artworks.</p>
+<p><button class="button disabled inverted">Find</button></p>
+<p>close to each artwork a station that holds information on the artwork in
+following formats: printed text, large text, braille, and audio descriptions. QR codes will lead you to each artworks’ digital presence.</p>
+<!-- Audio block -->
+<figure>
+  <audio controls src="/media/file.mp3">
+    <a href="/media/file.mp3">Download audio</a>
+  </audio>
+  <figcaption>Listen to lorem ipsum dolor</figcaption>
+</figure>
+<h2>Floorplan</h2>
+<p>Placeholder</p>
 
       </div>
     </main>
     <footer>
   <div class="footer-wrapper">
     <div class="row">
-      <div class="col-9">
+      <div class="col-left">
         <nav aria-label="Footer navigation" class="footer-nav">
           <ul>
             <li>
-              <a href="/layers-of-vision/terms-and-conditions/"
-                >Terms &amp; Conditions</a
+              <a 
+                href="/layers-of-vision/terms-and-conditions/"
+                >
+                Terms &amp; Conditions
+              </a
               >
             </li>
-            <li><a href="/layers-of-vision/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="/layers-of-vision/cookies/">Cookies</a></li>
+            <li>
+              <a href="/layers-of-vision/privacy-policy/"
+              >
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="/layers-of-vision/cookies/"
+              >
+                Cookies
+              </a>
+            </li>
             <li>
               <a href="/layers-of-vision/accessibility/"
-                >Accessibility Statement</a
               >
+                Accessibility Statement
+              </a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="col-3 social">
+      <div class="col-right social">
         <h3>Join in</h3>
         <ul>
           <li>
@@ -111,7 +146,7 @@
     </div>
 
     <div class="row">
-      <div class="col-9 invert">
+      <div class="col-left invert">
         <h3>Contact</h3>
         <p>
           If you have any queries please do not hesitate to contact us at
@@ -123,7 +158,7 @@
           development: King's Digital Lab
         </p>
       </div>
-      <div class="col-3">
+      <div class="col-right">
         <div class="kcl-logo">
           <a href="//kcl.ac.uk">
             <span class="sr-only">King's College London site</span>
@@ -216,12 +251,23 @@
 </footer>
 
 
-    <!-- Dark/Light mode switcher -->
-    <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="switcher">
+    <!-- Font size switcher -->
+    <div class="switch-wrapper">
+      <label class="switch font-sizer" for="font-switcher">
         <span class="sr-only">Toggle Dark/Light Mode</span>
-        <input type="checkbox" name="dark-light-switcher" id="switcher">
-        <div class="switch round">
+        <input type="checkbox" name="dark-light-switcher" id="font-switcher">
+        <div class="switch-icon round">
+          <p><small>A</small>A</p>
+        </div>
+      </label>
+    </div>
+
+    <!-- Dark/Light mode switcher -->
+    <div class="switch-wrapper">
+      <label class="switch theme" for="mode-switcher">
+        <span class="sr-only">Toggle Dark/Light Mode</span>
+        <input type="checkbox" name="dark-light-switcher" id="mode-switcher">
+        <div class="switch-icon round">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/>
           </svg>

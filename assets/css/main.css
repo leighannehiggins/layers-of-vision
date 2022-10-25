@@ -20,14 +20,14 @@
   --primary: #001923;
   --secondary: #eefdfd;
   --font-color: #001923;
-  --text-anchor: teal;
+  --text-anchor: --primary;
 }
 
 [data-theme=dark] {
   --primary: #eefdfd;
   --secondary: #001923;
   --font-color: #eefdfd;
-  --text-anchor: orange;
+  --text-anchor: --primary;
 }
 
 .invert {
@@ -43,6 +43,7 @@
 /* 1. Globals */
 body {
   background: var(--secondary);
+  box-sizing: border-box;
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 1.25rem;
@@ -62,7 +63,6 @@ header {
   position: relative;
 }
 
-h1,
 h2,
 h3,
 h4 {
@@ -70,27 +70,65 @@ h4 {
 }
 
 h1 {
-  font-size: 5.875rem;
+  font-size: 94px;
+  margin-top: 0;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 64px;
+  line-height: 74px;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 h4 {
-  font-size: 1.75rem;
+  font-size: 28px;
 }
 
 .large-font {
-  font-size: 4rem;
+  font-size: 64px;
+}
+
+ol {
+  counter-reset: a;
+  list-style: none;
+  margin-left: 0;
+  position: relative;
+}
+ol > li {
+  counter-increment: a;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+ol > li::before {
+  border: 2px solid var(--primary);
+  box-sizing: border-box;
+  content: counter(a, decimal) "";
+  display: inline-block;
+  font-size: 40px;
+  height: 70px;
+  line-height: 1;
+  margin-right: 24px;
+  padding: 14px 20px;
+  text-align: center;
+  width: 70px;
+}
+ol > li a {
+  text-decoration: none;
+}
+ol > li a:hover {
+  text-decoration: underline;
 }
 
 p {
   margin: 0 0 0.5em;
+}
+
+small {
+  font-size: 0.6125em;
 }
 
 .skip-link {
@@ -112,9 +150,10 @@ button,
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  line-height: 2.5rem;
+  padding: 11px 21px;
   text-decoration: none;
 }
 button:hover,
@@ -124,21 +163,31 @@ button:hover,
   color: var(--secondary);
   cursor: pointer;
 }
+button.inverted,
+.button.inverted {
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+button.disabled:hover,
+.button.disabled:hover {
+  cursor: default;
+}
 
 .row {
   display: grid;
-  margin-top: 1em;
+  margin-top: 30px;
 }
-.row .col-9.invert {
-  padding: 1em;
+.row .col-left.invert {
+  padding: 8px 14px;
 }
-.row .col-9.invert a {
+.row .col-left.invert a {
   color: var(--secondary);
 }
-.row .col-9.invert h3 {
+.row .col-left.invert h3 {
   margin-top: 0;
 }
-.row .col-9.invert p:last-child {
+.row .col-left.invert p:last-child {
   margin-bottom: 0;
 }
 
@@ -161,12 +210,13 @@ nav ul {
 }
 nav ul li {
   display: block;
+  margin: 0;
 }
 nav ul li a {
   border: 2px solid var(--primary);
   color: var(--primary);
   display: block;
-  padding: 0.75rem 1.5rem;
+  padding: 11px 21px;
   text-decoration: none;
 }
 nav ul li a:hover, nav ul li a.active {
@@ -176,15 +226,15 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .main-nav {
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .footer-wrapper {
-  margin: 1rem auto 0;
-  max-width: 1132px;
+  margin: 30px auto 0;
+  max-width: 1134px;
 }
 .footer-wrapper .footer-nav a {
-  padding: 0.75rem 1rem;
+  padding: 8px 15px;
 }
 .footer-wrapper h3 {
   font-size: 1.25rem;
@@ -200,6 +250,10 @@ main,
 .main {
   padding: 1em;
 }
+main p,
+.main p {
+  margin-bottom: 50px;
+}
 
 .block {
   margin: 1em auto;
@@ -213,9 +267,9 @@ main,
 
 .notehead div p {
   border-top: 15px solid var(--primary);
-  font-size: 2rem;
-  margin-right: 1rem;
-  padding-top: 0.5rem;
+  font-size: 32px;
+  margin-right: 16px;
+  padding-top: 8px;
 }
 
 .social h3,
@@ -230,25 +284,29 @@ main,
 }
 .social ul li {
   border: 1px solid var(--primary);
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 .social ul li svg {
   vertical-align: middle;
 }
 
 /* 5. Media (Image, Audio, Video, etc.) */
-audio {
-  border: 1px solid var(--primary);
-  margin: 2em 0;
+audio,
+video {
+  border: 2px solid var(--primary);
+  box-sizing: border-box;
+  display: flex;
   width: 100%;
+}
+
+figcaption {
+  border: 2px solid var(--primary);
+  border-top: 0;
+  padding: 24px;
 }
 
 figure {
   margin: 2em 0;
-}
-
-video {
-  width: 100%;
 }
 
 .icon {
@@ -267,10 +325,10 @@ video {
 }
 
 .kcl-logo {
-  padding: 2rem;
+  padding: 30px;
 }
 .kcl-logo a {
-  display: block;
+  display: flex;
 }
 .kcl-logo a:hover .kcl-rect {
   fill: #e2231a;
@@ -323,61 +381,93 @@ video {
     right: 0;
     text-align: right;
   }
+  nav ul {
+    display: flex;
+  }
   nav ul li {
-    display: inline-block;
+    margin: 0 0 0 15px;
+  }
+  nav ul li:first-child {
+    margin-left: 0;
   }
   .kcl-logo {
-    padding: 0 0 2rem 0;
+    padding: 0 0 30px 0;
   }
   .notehead {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 5rem;
-    margin-top: -6rem;
+    margin-top: -7rem;
   }
   .notehead div {
-    grid-column: 2/2;
+    grid-column: 2/4;
     text-align: right;
   }
   .notehead div p {
     display: inline-block;
     text-align: left;
   }
+  .not-home main {
+    margin-top: -145px;
+  }
+  .not-home main p {
+    max-width: 664px;
+  }
   .row {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 2em;
+    grid-template-columns: auto 200px;
+    grid-column-gap: 30px;
   }
-  .row .col-9 {
-    grid-column: 1/10;
+  .row .col-left {
+    grid-column: auto;
   }
-  .row .col-3 {
-    grid-column: 10/13;
+  .row .col-right {
+    align-self: end;
     text-align: right;
   }
 }
 /* 7. Dark/Light */
 /* Ref: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 /* Simple css to style it like a toggle switch */
-.theme-switch {
-  background: var(--secondary);
-  border: 2px solid var(--primary);
-  bottom: 0;
-  display: inline-block;
-  height: 3rem;
-  padding: 0.5rem;
-  position: fixed;
-  right: 0;
-  width: 3rem;
-}
-
-.theme-switch input {
-  display: none;
+.swtich-wrapper {
+  display: flex;
 }
 
 .switch {
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+  bottom: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 62px;
+  padding: 11px;
+  position: fixed;
+  width: 62px;
+}
+.switch:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+.switch:hover svg {
+  fill: var(--secondary);
+}
+.switch input {
+  display: none;
+}
+.switch.font-sizer {
+  font-size: 34px;
+  line-height: 1;
+}
+.switch.font-sizer p {
+  margin: 0;
+}
+.switch.theme {
+  right: 0;
+}
+
+.switch-icon {
   cursor: pointer;
 }
-.switch svg {
+.switch-icon svg {
   fill: var(--primary);
 }
 
@@ -391,13 +481,13 @@ input:checked + .slider:before {
     --primary: #eefdfd;
     --secondary: #001923;
     --font-color: #eefdfd;
-    --text-anchor: orange;
+    --text-anchor: #eefdfd;
   }
   [data-theme=dark] {
     --primary: #001923;
     --secondary: #eefdfd;
     --font-color: #001923;
-    --text-anchor: teal;
+    --text-anchor: #001923;
   }
 }
 /* 8. Imports */
