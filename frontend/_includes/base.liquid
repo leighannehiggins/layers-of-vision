@@ -31,15 +31,15 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}?ts={{ "now" | date: "%s" }}">
     <script src="{{ '/assets/js/navbar-toggle.js' | url }}?ts={{ "now" | date: "%s" }}"></script>
   </head>
-  <body class="{{ body_class }}">
+  <body class="{{ body_class }}{% if permalink == '/' %} home {% else %} not-home{% endif %}">
     {% include "header.liquid" %}
     <main id="main">
       {% if permalink == "/" %}
       <div class="notehead">
         <div>
-          <p><strong>A King's College London Exhibition</strong><br>
-          Until 16 December 2022<br>
-          As part of UK Disability History Month</p>
+          <p><strong>21st November &mdash; 16th December</strong><br>
+          Coinciding with UK Disability History Month<br>
+          Free, no booking required</p>
         </div>
       </div>
       {% endif %}
@@ -55,14 +55,25 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
         {{ content }}
       </div>
     </main>
-    {% include "footer.html" %}
+    {% include "footer.liquid" %}
+
+    <!-- Font size switcher -->
+    <div class="switch-wrapper">
+      <label class="switch font-sizer" for="font-switcher">
+        <span class="sr-only">Toggle Dark/Light Mode</span>
+        <input type="checkbox" name="dark-light-switcher" id="font-switcher">
+        <div class="switch-icon round">
+          <p><small>A</small>A</p>
+        </div>
+      </label>
+    </div>
 
     <!-- Dark/Light mode switcher -->
-    <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="switcher">
+    <div class="switch-wrapper">
+      <label class="switch theme" for="mode-switcher">
         <span class="sr-only">Toggle Dark/Light Mode</span>
-        <input type="checkbox" name="dark-light-switcher" id="switcher">
-        <div class="switch round">
+        <input type="checkbox" name="dark-light-switcher" id="mode-switcher">
+        <div class="switch-icon round">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/>
           </svg>

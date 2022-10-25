@@ -5,7 +5,7 @@
 // const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
 
 const toggleSwitch = document.querySelector(
-  '.theme-switch input[type="checkbox"]'
+  '.switch.theme input[type="checkbox"]'
 );
 const currentTheme = localStorage.getItem("theme");
 

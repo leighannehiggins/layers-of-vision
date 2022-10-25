@@ -55,6 +55,7 @@ $kings-red: #e2231a;
 
 body {
   background: var(--secondary);
+  box-sizing: border-box;
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 1.25rem;
@@ -76,7 +77,6 @@ header {
 }
 
 // Headings
-h1,
 h2,
 h3,
 h4 {
@@ -84,7 +84,8 @@ h4 {
 }
 
 h1 {
-  font-size: 5.875rem;
+  font-size: 94px;
+  margin-top: 0;
 }
 
 h2 {
@@ -93,19 +94,24 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 h4 {
-  font-size: 1.75rem;
+  font-size: 28px;
 }
 
 .large-font {
-  font-size: 4rem;
+  font-size: 64px;
 }
 
 p {
+  // line-height: 27px;
   margin: 0 0 0.5em;
+}
+
+small {
+  font-size: .6125em;
 }
 
 // Skip content button
@@ -130,10 +136,10 @@ button,
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: 700;
   line-height: 2.5rem;
-  padding: 0.6875rem 1.3125rem;
+  padding: 11px 21px;
   text-decoration: none;
 
   &:hover {
@@ -142,6 +148,18 @@ button,
     color: var(--secondary);
     cursor: pointer;
   }
+
+  &.inverted {
+    background-color: var(--primary);
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+  }
+
+  &.disabled {
+    &:hover {
+      cursor: default;
+    }
+  }
 }
 
 // Grid container
@@ -149,7 +167,7 @@ button,
 .row {
   display: grid;
 
-  margin-top: 1em;
+  margin-top: 30px;
 
   .col-left {
     &.invert {
@@ -227,10 +245,6 @@ nav {
     a {
       padding: 8px 15px;
     }
-
-    li:first-child {
-      margin-left: 0;
-    }
   }
 
   h3 {
@@ -248,6 +262,10 @@ nav {
 main,
 .main {
   padding: 1em;
+
+  p {
+    margin-bottom: 50px;
+  }
 }
 
 .block {
@@ -298,18 +316,22 @@ main,
 
 /* 5. Media (Image, Audio, Video, etc.) */
 
-audio {
-  border: 1px solid var(--primary);
-  margin: 2em 0;
+audio,
+video {
+  border: 2px solid var(--primary);
+  box-sizing: border-box;
+  display: flex;
   width: 100%;
+}
+
+figcaption {
+  border: 2px solid var(--primary);
+  border-top: 0;
+  padding: 24px;
 }
 
 figure {
   margin: 2em 0;
-}
-
-video {
-  width: 100%;
 }
 
 .icon {
@@ -408,6 +430,10 @@ video {
       display: flex; // gets rid of whitespace issue
       li {
         margin: 0 0 0 15px;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -419,17 +445,29 @@ video {
   // Notehead
   .notehead {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     margin-bottom: 5rem;
-    margin-top: -6rem;
+    margin-top: -7rem;
 
     div {
-      grid-column: 2/2;
+      grid-column: 2/4;
       text-align: right;
       p {
         display: inline-block;
         text-align: left;
+      }
+    }
+  }
+
+  // Main top margin on pages that are not the homepage
+
+  .not-home {
+    main {
+      margin-top: -145px;
+
+      p {
+        max-width: 664px;
       }
     }
   }
@@ -457,23 +495,48 @@ video {
 
 /* Simple css to style it like a toggle switch */
 
-.theme-switch {
-  background: var(--secondary);
-  border: 1px solid var(--primary);
-  bottom: 50%;
-  display: inline-block;
-  height: 3rem;
-  padding: 0.5rem;
-  position: fixed;
-  right: 0;
-  width: 3rem;
-}
-
-.theme-switch input {
-  display: none;
+.swtich-wrapper {
+  display: flex;
 }
 
 .switch {
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+  bottom: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 62px;
+  padding: 11px;
+  position: fixed;
+  width: 62px;
+
+  &:hover {
+    background: var(--primary);
+    color: var(--secondary);
+    svg {
+      fill: var(--secondary);
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  &.font-sizer {
+    font-size: 34px;
+    line-height: 1;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &.theme {
+    right: 0;
+  }
+}
+
+.switch-icon {
   cursor: pointer;
 
   svg {
