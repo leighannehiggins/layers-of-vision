@@ -131,7 +131,8 @@ button,
   display: inline-block;
   font-size: 2rem;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  line-height: 2.5rem;
+  padding: 0.6875rem 1.3125rem;
   text-decoration: none;
 
   &:hover {
@@ -149,9 +150,9 @@ button,
 
   margin-top: 1em;
 
-  .col-9 {
+  .col-left {
     &.invert {
-      padding: 1em;
+      padding: 8px 14px;
 
       a {
         color: var(--secondary);
@@ -193,12 +194,13 @@ nav {
 
     li {
       display: block;
+      margin: 0;
 
       a {
         border: 2px solid var(--primary);
         color: var(--primary);
         display: block;
-        padding: 0.75rem 1.5rem;
+        padding: 11px 15px;
         text-decoration: none;
 
         &:hover,
@@ -213,7 +215,7 @@ nav {
 }
 
 .main-nav {
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .footer-wrapper {
@@ -222,7 +224,11 @@ nav {
 
   .footer-nav {
     a {
-      padding: 0.75rem 1rem;
+      padding: 0.5rem 0.9375rem;
+    }
+
+    li:first-child {
+      margin-left: 0;
     }
   }
 
@@ -257,9 +263,9 @@ main,
   div {
     p {
       border-top: 15px solid var(--primary);
-      font-size: 2rem;
-      margin-right: 1rem;
-      padding-top: 0.5rem;
+      font-size: 32px;
+      margin-right: 16px;
+      padding-top: 8px;
     }
   }
 }
@@ -280,7 +286,7 @@ main,
 
     li {
       border: 1px solid var(--primary);
-      margin-left: 0.5rem;
+      margin-left: 8px;
 
       svg {
         vertical-align: middle;
@@ -325,7 +331,7 @@ video {
 
 // KCL Logo
 .kcl-logo {
-  padding: 2rem;
+  padding: 30px;
 
   a {
     display: block;
@@ -398,14 +404,15 @@ video {
 
   nav {
     ul {
+      display: flex; // gets rid of whitespace issue
       li {
-        display: inline-block;
+        margin: 0 0 0 15px;
       }
     }
   }
 
   .kcl-logo {
-    padding: 0 0 2rem 0;
+    padding: 0 0 30px 0;
   }
 
   // Notehead
@@ -427,15 +434,15 @@ video {
   }
 
   .row {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 2em;
+    grid-template-columns: auto 150px;
+    grid-column-gap: 30px;
 
-    .col-9 {
-      grid-column: 1/10;
+    .col-left {
+      grid-column: auto;
     }
 
-    .col-3 {
-      grid-column: 10/13;
+    .col-right {
+      align-self: end;
       text-align: right;
     }
   }
