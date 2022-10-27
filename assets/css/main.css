@@ -46,9 +46,11 @@ body {
   box-sizing: border-box;
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 1.25rem;
   margin: 0;
   padding: 0;
+}
+body.zoom {
+  zoom: 1.25;
 }
 
 a {
@@ -151,9 +153,9 @@ button,
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 40px;
   padding: 11px 21px;
   text-decoration: none;
 }
@@ -179,6 +181,24 @@ button.small,
   font-size: 20px;
   line-height: 25px;
   padding: 8px 15px;
+}
+button.to-top,
+.button.to-top {
+  box-sizing: border-box;
+  display: flex;
+  height: 62px;
+  padding: 15px;
+  width: 62px;
+}
+button.to-top svg,
+.button.to-top svg {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 3px;
+}
+button.to-top:hover svg,
+.button.to-top:hover svg {
+  stroke: var(--secondary);
 }
 
 .row {
@@ -236,7 +256,13 @@ nav ul li a:hover, nav ul li a.active {
   font-size: 32px;
 }
 
+footer,
+.footer {
+  position: relative;
+}
+
 .footer-wrapper {
+  font-size: 20px;
   margin: 30px auto 0;
   max-width: 1134px;
 }
@@ -244,18 +270,26 @@ nav ul li a:hover, nav ul li a.active {
   padding: 8px 15px;
 }
 .footer-wrapper h3 {
-  font-size: 1.25rem;
+  font-size: 20px;
+}
+.footer-wrapper p {
+  font-size: 20px;
+}
+.footer-wrapper p.tag-line {
+  font-size: 14px;
+  margin-top: 32px;
 }
 
-.tag-line {
-  font-size: 1rem;
-  margin-top: 2rem;
+.to-top {
+  position: absolute;
+  right: 0;
+  top: 75px;
 }
 
 /* 4. Main */
 main,
 .main {
-  padding: 1em;
+  padding: 16px;
 }
 main p,
 .main p {
@@ -263,13 +297,8 @@ main p,
 }
 
 .block {
-  margin: 1em auto;
+  margin: 16px auto;
   max-width: 900px;
-}
-
-.intro {
-  font-size: 4rem;
-  font-weight: bold;
 }
 
 .notehead div p {
@@ -329,11 +358,11 @@ figure {
 
 .icon {
   display: block;
-  padding: 0.5rem;
+  padding: 8px;
 }
 .icon svg {
   fill: var(--primary);
-  width: 1.25rem;
+  width: 20px;
 }
 .icon:hover {
   background: var(--primary);
@@ -418,8 +447,7 @@ main img {
   .notehead {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 5rem;
-    margin-top: -7rem;
+    margin-top: -110px;
   }
   .notehead div {
     grid-column: 2/4;
@@ -472,7 +500,7 @@ main img {
 .switch {
   background: var(--secondary);
   border: 2px solid var(--primary);
-  bottom: 50%;
+  bottom: 10px;
   box-sizing: border-box;
   display: inline-block;
   height: 62px;

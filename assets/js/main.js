@@ -30,3 +30,12 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+// Resize font
+let fontToggler = document.getElementById("font-switcher");
+
+function toggleFont() {
+  document.getElementById("top").classList.toggle("zoom");
+}
+
+fontToggler.addEventListener("click", toggleFont);
