@@ -12,13 +12,14 @@
                 {% endcomment %}
         <li><a href="{{ '/' | url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
         {% for entry in navPages %}
-            {% comment %}Change this if we start using children {% endcomment %}
-            {% if entry.url contains page.url%}
+
+            {% if forloop.index > 1 %}
+                {% comment %}Change this if we start using children {% endcomment %}
+            {% if page.url != '/' and entry.url contains page.url%}
             {% assign linkClass = ' active' %}
             {% else %}
                 {% assign linkClass = '' %}
                 {% endif %}
-            {% if forloop.index > 1 %}
                 <li><a class="navbar-link{{ linkClass }}"  href="{{ entry.url | url }}">{{ entry.title }}</a></li>
                 {% comment %}
                 Sub entries in navigation, commented out but kept in case it's useful later
