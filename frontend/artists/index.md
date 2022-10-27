@@ -6,6 +6,4 @@ eleventyNavigation:
   order: 3
 ---
 
-lorem ipsum
-
 {% include 'team.md', team: 'artists' %}

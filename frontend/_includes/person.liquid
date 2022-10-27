@@ -7,14 +7,29 @@ layout: base.liquid
 {% assign previousArtist = collections.artists | getPreviousCollectionItem: page %}
 {% assign nextArtist = collections.artists | getNextCollectionItem: page %}
 
-{% if previousArtist %}
+{% comment %}
+  {% if previousArtist %}
   Previous:
   <a href="{{ previousArtist.url | url }}">{{ previousArtist.data.title }}</a>
-{% endif %}
-{% if nextArtist %}
+  {% endif %}
+  {% if nextArtist %}
   Next:
   <a href="{{ nextArtist.url | url }}">{{ nextArtist.data.title }}</a>
-{% endif %}
+  {% endif %}
+{% endcomment %}
+
+<nav class="row" aria-label="Artist list">
+  <div class="col-auto">
+    {% if previousArtist %}
+      <a href="{{ previousArtist.url | url }}" class="button">Previous</a>
+    {% endif %}
+  </div>
+  <div class="col-end">
+    {% if nextArtist %}
+      <a href="{{ nextArtist.url | url }}" class="button">Next</a>
+    {% endif %}
+  </div>
+</nav>
 
 <div class="artist block">
   <div class="row">
