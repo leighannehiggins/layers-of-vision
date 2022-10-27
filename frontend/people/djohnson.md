@@ -17,5 +17,4 @@ teams:
 ---
 
 This is the bio text.
-
 Lorem ipsum
