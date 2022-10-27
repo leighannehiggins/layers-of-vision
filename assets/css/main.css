@@ -112,7 +112,7 @@ ol > li::before {
   height: 70px;
   line-height: 1;
   margin-right: 24px;
-  padding: 14px 20px;
+  padding: 14px 0;
   text-align: center;
   width: 70px;
 }
@@ -283,6 +283,7 @@ main p,
   border: 2px solid var(--primary);
   display: block;
   font-size: 40px;
+  font-weight: 700;
   height: 62px;
   line-height: 62px;
   text-align: center;
@@ -339,6 +340,10 @@ figure {
 }
 .icon:hover svg {
   fill: var(--secondary);
+}
+
+main img {
+  width: 100%;
 }
 
 .kcl-logo {
