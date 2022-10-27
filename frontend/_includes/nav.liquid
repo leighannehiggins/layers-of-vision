@@ -1,12 +1,37 @@
-{% assign navPages = collections.all | eleventyNavigation %}
+{% assign navPages = collections.all | eleventyNavigation: "Header" %}
 
 <nav class="main-nav" aria-label="Main navigation">
-  <ul>
-    <li><a href="{{ '/' | url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
-    <li><a href="{{ '/exhibition/' | url }}"{% if page.url == '/exhibition/' %} class="active"{% endif %}>The Exhibition</a></li>
-    <li><a href="{{ '/artists/' | url }}"{% if page.url == '/artists/' %} class="active"{% endif %}>Artists</a></li>
-    <li><a href="{{ '/visitors/' | url }}"{% if page.url == '/visitors/' %} class="active"{% endif %}>Visitor info</a></li>
-  </ul>
+    <ul>
+        {% comment %}
+
+        <li><a href="{{ '/exhibition/' | url }}"{% if page.url == '/exhibition/' %} class="active"{% endif %}>The
+                Exhibition</a></li>
+        <li><a href="{{ '/artists/' | url }}"{% if page.url == '/artists/' %} class="active"{% endif %}>Artists</a></li>
+        <li><a href="{{ '/visitors/' | url }}"{% if page.url == '/visitors/' %} class="active"{% endif %}>Visitor
+                info</a></li>
+                {% endcomment %}
+        <li><a href="{{ '/' | url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
+        {% for entry in navPages %}
+            {% comment %}Change this if we start using children {% endcomment %}
+            {% if entry.url contains page.url%}
+            {% assign linkClass = ' active' %}
+            {% else %}
+                {% assign linkClass = '' %}
+                {% endif %}
+            {% if forloop.index > 1 %}
+                <li><a class="navbar-link{{ linkClass }}"  href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+                {% comment %}
+                Sub entries in navigation, commented out but kept in case it's useful later
+                {% if entry.children.length > 0 %}
+                    {% for subentry in entry.children %}
+                        <a class="navbar-item {% if page.url | contains: subentry.url %}is-active{% endif %}"
+                           href="{{ subentry.url | url }}">{{ subentry.title }}</a>
+                    {% endfor %}
+                {% endif %}
+                {% endcomment %}
+            {% endif %}
+        {% endfor %}
+    </ul>
 </nav>
 
 {% comment %}

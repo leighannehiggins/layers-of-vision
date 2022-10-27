@@ -2,6 +2,7 @@
 title: The Exhibition
 eleventyNavigation:
   key: Exhibition
+  parent: Header
   order: 2
 ---
 

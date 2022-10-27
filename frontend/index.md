@@ -3,6 +3,7 @@ title: Layers of Vision
 permalink: /
 eleventyNavigation:
   key: Home
+  parent: Header
   order: 1
 ---
 
