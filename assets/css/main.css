@@ -147,6 +147,7 @@ small {
 
 button,
 .button {
+  background: transparent;
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
@@ -173,21 +174,27 @@ button.disabled:hover,
 .button.disabled:hover {
   cursor: default;
 }
+button.small,
+.button.small {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 8px 15px;
+}
 
 .row {
   display: grid;
   margin-top: 30px;
 }
-.row .col-left.invert {
+.row .col-auto.invert {
   padding: 8px 14px;
 }
-.row .col-left.invert a {
+.row .col-auto.invert a {
   color: var(--secondary);
 }
-.row .col-left.invert h3 {
+.row .col-auto.invert h3 {
   margin-top: 0;
 }
-.row .col-left.invert p:last-child {
+.row .col-auto.invert p:last-child {
   margin-bottom: 0;
 }
 
@@ -272,6 +279,16 @@ main p,
   padding-top: 8px;
 }
 
+.square {
+  border: 2px solid var(--primary);
+  display: block;
+  font-size: 40px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  width: 62px;
+}
+
 .social h3,
 .social ul,
 .social li {
@@ -283,7 +300,7 @@ main p,
   padding: 0;
 }
 .social ul li {
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   margin-left: 8px;
 }
 .social ul li svg {
@@ -417,12 +434,27 @@ figure {
     grid-template-columns: auto 200px;
     grid-column-gap: 30px;
   }
-  .row .col-left {
+  .row .col-auto {
     grid-column: auto;
   }
-  .row .col-right {
+  .row .col-end {
     align-self: end;
     text-align: right;
+  }
+  .row-full {
+    display: grid;
+    grid-template-columns: 314px auto;
+    grid-column-gap: 30px;
+  }
+  .row-full .col-auto {
+    grid-column: auto;
+  }
+  .row-full .col-start {
+    align-self: start;
+  }
+  .row-full .col-start p {
+    line-height: 27px;
+    margin: 0 0 8px;
   }
 }
 /* 7. Dark/Light */
