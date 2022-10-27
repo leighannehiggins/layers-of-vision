@@ -4,6 +4,9 @@ eleventyComputed:
 layout: base.liquid
 ---
 
+{% assign previousArtist = collections.artists | getPreviousCollectionItem: page %}
+{% assign nextArtist = collections.artists | getNextCollectionItem: page %}
+
 <div class="person-bio block">
     <img src="{{ image | url }}#left" alt="A photograph of {{ firstName }} {{ lastName }}">
 
@@ -14,4 +17,13 @@ layout: base.liquid
             <a class="button is-info is-light" href="{{ mainEntityOfPage }}">Academic page</a>
         {% endif %}
     </div>
+</div>
+
+<div>
+    {% if previousArtist %}
+        Previous: <a href="{{ previousArtist.url | url }}">{{ previousArtist.data.title }}</a>
+    {% endif %}
+{% if nextArtist %}
+    Next: <a href="{{ nextArtist.url | url }}">{{ nextArtist.data.title }}</a>
+{% endif %}
 </div>
