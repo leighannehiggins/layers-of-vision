@@ -5,5 +5,54 @@ layout: base.liquid
 ---
 
 <div class="artist block">
-  {{ content }}
+  <div class="row">
+    <div class="col-auto">
+      <span class="square">{{ order }}</span>
+    </div>
+    <div class="col-end">
+      <a href="#" class="button small">Floorplan</a>
+    </div>
+  </div>
+  <h2>{{ workTitle }}</h2>
+  <div class="row-full">
+    <div class="col-start">
+      <p>{{ year }}</p>
+      <p>{{ workType }}</p>
+      <p>({{ workSize }})</p>
+    </div>
+    <div class="col-auto">
+      {{ workDescription }}
+    </div>
+  </div>
+
+  <!-- Audio block -->
+  <figure>
+    <audio controls src="{{ audioLink }}">
+      <a href="{{ audioLink }}">Download audio</a>
+    </audio>
+    <figcaption>Listen to lorem ipsum dolor</figcaption>
+  </figure>
+
+  <div>
+    <a href="{{ transcriptLink }}" class="button small">Download transcript</a>
+  </div>
+
+  <div>
+    <img src="{{ workImage | url }}" alt="{{ workTitle }}">
+  </div>
+
+  <h2>Artist Bio</h2>
+  <div class="row-full">
+    <div class="col-start">
+      <p>
+        <a href="//{{ artistWeb }}">{{ artistWeb }}</a>
+      </p>
+      <p>
+        <a href="//instagram.com/{{ artistInsta }}">@{{ artistInsta }}</a>
+      </p>
+    </div>
+    <div class="col-auto">
+      {{ content }}
+    </div>
+  </div>
 </div>
