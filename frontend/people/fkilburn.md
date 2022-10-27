@@ -12,16 +12,4 @@ teams:
   - artists
 ---
 
-<!-- Audio block -->
-<figure>
-  <audio controls src="/media/file.mp3">
-    <a href="/media/file.mp3">Download audio</a>
-  </audio>
-  <figcaption>Listen to lorem ipsum dolor</figcaption>
-</figure>
-
-<button class="small">Download transcript</button>
-
-## Artist bio
-
 Lorem ipsum
