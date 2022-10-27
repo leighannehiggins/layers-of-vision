@@ -4,6 +4,18 @@ eleventyComputed:
 layout: base.liquid
 ---
 
+{% assign previousArtist = collections.artists | getPreviousCollectionItem: page %}
+{% assign nextArtist = collections.artists | getNextCollectionItem: page %}
+
+{% if previousArtist %}
+  Previous:
+  <a href="{{ previousArtist.url | url }}">{{ previousArtist.data.title }}</a>
+{% endif %}
+{% if nextArtist %}
+  Next:
+  <a href="{{ nextArtist.url | url }}">{{ nextArtist.data.title }}</a>
+{% endif %}
+
 <div class="artist block">
   <div class="row">
     <div class="col-auto">
