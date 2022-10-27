@@ -596,6 +596,7 @@ input:checked + .slider:before {
 }
 .zoom .large-font {
   font-size: 80px;
+  line-height: 94px;
 }
 
 /* 8. Imports */
