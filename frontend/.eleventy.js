@@ -15,9 +15,12 @@ module.exports = function (config) {
   // just copy the assets folder as is to the static site _site
   // config.addPassthroughCopy("**/*.css");
   config.addPassthroughCopy("assets/node_modules");
+  config.addPassthroughCopy("assets/audio");
   config.addPassthroughCopy("assets/fonts");
   config.addPassthroughCopy("assets/img");
   config.addPassthroughCopy("assets/js");
+  config.addPassthroughCopy("assets/transcript");
+  config.addPassthroughCopy("assets/video");
 
   // just copy the admin folder as is to the static site _site
   // config.addPassthroughCopy("admin");

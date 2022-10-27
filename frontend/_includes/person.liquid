@@ -54,14 +54,14 @@ layout: base.liquid
 
   <!-- Audio block -->
   <figure>
-    <audio controls src="{{ audioLink }}">
-      <a href="{{ audioLink }}">Download audio</a>
+    <audio controls src="{{ audioLink | url }}">
+      <a href="{{ audioLink | url }}">Download audio</a>
     </audio>
     <figcaption>Listen to lorem ipsum dolor</figcaption>
   </figure>
 
   <div>
-    <a href="{{ transcriptLink }}" class="button small">Download transcript</a>
+    <a href="{{ transcriptLink | url }}" class="button small">Download transcript</a>
   </div>
 
   <div>
