@@ -49,9 +49,6 @@ body {
   margin: 0;
   padding: 0;
 }
-body.zoom {
-  zoom: 1.25;
-}
 
 a {
   color: var(--text-anchor);
@@ -65,15 +62,15 @@ header {
   position: relative;
 }
 
+h1 {
+  font-size: 94px;
+  margin-top: 0;
+}
+
 h2,
 h3,
 h4 {
   margin: 1em 0 0.5em;
-}
-
-h1 {
-  font-size: 94px;
-  margin-top: 0;
 }
 
 h2 {
@@ -293,6 +290,8 @@ main,
 }
 main p,
 .main p {
+  font-size: 20px;
+  line-height: 27px;
   margin-bottom: 50px;
 }
 
@@ -304,8 +303,9 @@ main p,
 .notehead div p {
   border-top: 15px solid var(--primary);
   font-size: 32px;
+  line-height: 40px;
   margin-right: 16px;
-  padding-top: 8px;
+  padding-top: 14px;
 }
 
 .square {
@@ -555,6 +555,48 @@ input:checked + .slider:before {
     --text-anchor: #001923;
   }
 }
+.zoom {
+  font-size: 20px;
+}
+.zoom h1 {
+  font-size: 120px;
+}
+.zoom h2 {
+  font-size: 80px;
+}
+.zoom h3 {
+  font-size: 54px;
+}
+.zoom h4 {
+  font-size: 42px;
+}
+.zoom p {
+  font-size: 28px;
+  line-height: 40px;
+}
+.zoom ol li {
+  font-size: 80px;
+}
+.zoom .main-nav {
+  font-size: 48px;
+}
+.zoom .footer-nav {
+  font-size: 24px;
+}
+.zoom .notehead p {
+  font-size: 40px;
+}
+.zoom button,
+.zoom .button {
+  font-size: 40px;
+}
+.zoom .footer-wrapper h3 {
+  font-size: 24px;
+}
+.zoom .large-font {
+  font-size: 80px;
+}
+
 /* 8. Imports */
 /* Custom fonts */
 @font-face {
