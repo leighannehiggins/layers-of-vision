@@ -60,7 +60,7 @@ body {
   box-sizing: border-box;
   color: var(--font-color);
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
   margin: 0;
   padding: 0;
 }
@@ -174,9 +174,9 @@ button,
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 40px;
   padding: 11px 21px;
   text-decoration: none;
 
@@ -307,6 +307,7 @@ footer,
 }
 
 .footer-wrapper {
+  font-size: 20px;
   margin: 30px auto 0;
   max-width: 1134px;
 
@@ -317,13 +318,17 @@ footer,
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 20px;
   }
-}
 
-.tag-line {
-  font-size: 1rem;
-  margin-top: 2rem;
+  p {
+    font-size: 20px;
+
+    &.tag-line {
+      font-size: 14px;
+      margin-top: 32px;
+    }
+  }
 }
 
 .to-top {
@@ -336,7 +341,7 @@ footer,
 
 main,
 .main {
-  padding: 1em;
+  padding: 16px;
 
   p {
     margin-bottom: 50px;
@@ -344,14 +349,14 @@ main,
 }
 
 .block {
-  margin: 1em auto;
+  margin: 16px auto;
   max-width: 900px;
 }
 
-.intro {
-  font-size: 4rem;
-  font-weight: bold;
-}
+// .intro {
+//   font-size: 4rem;
+//   font-weight: bold;
+// }
 
 .notehead {
   div {
@@ -423,11 +428,11 @@ figure {
 
 .icon {
   display: block;
-  padding: 0.5rem;
+  padding: 8px;
 
   svg {
     fill: var(--primary);
-    width: 1.25rem;
+    width: 20px;
   }
 
   &:hover {
@@ -538,8 +543,7 @@ main img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    margin-bottom: 5rem;
-    margin-top: -7rem;
+    margin-top: -110px;
 
     div {
       grid-column: 2/4;
@@ -612,7 +616,7 @@ main img {
 .switch {
   background: var(--secondary);
   border: 2px solid var(--primary);
-  bottom: 50%;
+  bottom: 10px;
   box-sizing: border-box;
   display: inline-block;
   height: 62px;
