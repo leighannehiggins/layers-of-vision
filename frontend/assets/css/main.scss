@@ -204,6 +204,26 @@ button,
     line-height: 25px;
     padding: 8px 15px;
   }
+
+  &.to-top {
+    box-sizing: border-box;
+    display: flex;
+    height: 62px;
+    padding: 15px;
+    width: 62px;
+
+    svg {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 3px;
+    }
+
+    &:hover {
+      svg {
+        stroke: var(--secondary);
+      }
+    }
+  }
 }
 
 // Grid container
@@ -281,6 +301,11 @@ nav {
   font-size: 32px;
 }
 
+footer,
+.footer {
+  position: relative;
+}
+
 .footer-wrapper {
   margin: 30px auto 0;
   max-width: 1134px;
@@ -299,6 +324,12 @@ nav {
 .tag-line {
   font-size: 1rem;
   margin-top: 2rem;
+}
+
+.to-top {
+  position: absolute;
+  right: 0;
+  top: 75px;
 }
 
 /* 4. Main */

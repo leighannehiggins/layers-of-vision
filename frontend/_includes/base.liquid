@@ -31,17 +31,18 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}?ts={{ "now" | date: "%s" }}">
     <script src="{{ '/assets/js/navbar-toggle.js' | url }}?ts={{ "now" | date: "%s" }}"></script>
   </head>
-  <body class="{{ body_class }}{% if permalink == '/' %} home {% else %} not-home{% endif %}">
+  <body class="{{ body_class }}{% if permalink == '/' %} home {% else %} not-home{% endif %}" id="top">
     {% include "header.liquid" %}
     <main id="main">
       {% if permalink == "/" %}
-      <div class="notehead">
-        <div>
-          <p><strong>21st November &mdash; 16th December</strong><br>
-          Coinciding with UK Disability History Month<br>
-          Free, no booking required</p>
+        <div class="notehead">
+          <div>
+            <p>
+              <strong>21st November &mdash; 16th December</strong><br>
+              Coinciding with UK Disability History Month<br>
+              Free, no booking required</p>
+          </div>
         </div>
-      </div>
       {% endif %}
       <div class="block">
         {% comment %}
@@ -63,7 +64,8 @@ pageImageWebPath: "/assets/img/logos/lov-temp-logo.png"
         <span class="sr-only">Toggle Dark/Light Mode</span>
         <input type="checkbox" name="dark-light-switcher" id="font-switcher">
         <div class="switch-icon round">
-          <p><small>A</small>A</p>
+          <p>
+            <small>A</small>A</p>
         </div>
       </label>
     </div>
