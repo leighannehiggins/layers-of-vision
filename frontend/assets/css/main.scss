@@ -170,6 +170,7 @@ small {
 // Buttons
 button,
 .button {
+  background: transparent;
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
@@ -197,6 +198,12 @@ button,
       cursor: default;
     }
   }
+
+  &.small {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 8px 15px;
+  }
 }
 
 // Grid container
@@ -206,7 +213,7 @@ button,
 
   margin-top: 30px;
 
-  .col-left {
+  .col-auto {
     &.invert {
       padding: 8px 14px;
 
@@ -326,6 +333,17 @@ main,
   }
 }
 
+// Used to style the numbers on the artist pages
+.square {
+  border: 2px solid var(--primary);
+  display: block;
+  font-size: 40px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  width: 62px;
+}
+
 // Social
 
 .social {
@@ -341,7 +359,7 @@ main,
     padding: 0;
 
     li {
-      border: 1px solid var(--primary);
+      border: 2px solid var(--primary);
       margin-left: 8px;
 
       svg {
@@ -513,13 +531,32 @@ figure {
     grid-template-columns: auto 200px;
     grid-column-gap: 30px;
 
-    .col-left {
+    .col-auto {
       grid-column: auto;
     }
 
-    .col-right {
+    .col-end {
       align-self: end;
       text-align: right;
+    }
+  }
+
+  .row-full {
+    display: grid;
+    grid-template-columns: 314px auto;
+    grid-column-gap: 30px;
+
+    .col-auto {
+      grid-column: auto;
+    }
+
+    .col-start {
+      align-self: start;
+
+      p {
+        line-height: 27px;
+        margin: 0 0 8px;
+      }
     }
   }
 }

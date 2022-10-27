@@ -4,14 +4,26 @@ eleventyComputed:
 layout: base.liquid
 ---
 
-<div class="person-bio block">
-    <img src="{{ image | url }}#left" alt="A photograph of {{ firstName }} {{ lastName }}">
-
-    <div>
-        {{ content }}
-
-        {% if mainEntityOfPage %}
-            <a class="button is-info is-light" href="{{ mainEntityOfPage }}">Academic page</a>
-        {% endif %}
+<div class="artist block">
+  <div class="row">
+    <div class="col-auto">
+      <span class="square">{{ order }}</span>
     </div>
+    <div class="col-end">
+      <a href="#" class="button small">Floorplan</a>
+    </div>
+  </div>
+  <h2>{{ workTitle }}</h2>
+  <div class="row-full">
+    <div class="col-start">
+      <p>{{ year }}</p>
+      <p>{{ workType }}</p>
+      <p>({{ workSize }})</p>
+    </div>
+    <div class="col-auto">
+      {{ workDescription }}
+    </div>
+  </div>
+
+  {{ content }}
 </div>
