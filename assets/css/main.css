@@ -288,7 +288,6 @@ main p,
   margin: 16px auto;
   max-width: 900px;
   position: relative;
-  z-index: 1;
 }
 
 .notehead div p {
@@ -402,7 +401,10 @@ main img {
 }
 .lov-logo h1,
 .lov-logo h2 {
+  height: 210px;
   margin: 0;
+  position: fixed;
+  width: 210px;
 }
 .lov-logo svg {
   max-width: 210px;
@@ -448,11 +450,11 @@ main img {
     display: inline-block;
     text-align: left;
   }
-  .not-home main {
-    margin-top: -145px;
-  }
   .not-home main p {
     max-width: 664px;
+  }
+  .not-home main .block {
+    margin-top: 105px;
   }
   .row {
     grid-template-columns: auto 200px;
