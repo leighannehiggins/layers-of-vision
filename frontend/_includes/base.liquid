@@ -33,7 +33,7 @@ pageImageWebPath: "/assets/img/logos/favicon.png"
   </head>
   <body class="{{ body_class }}{% if permalink == '/' %} home {% else %} not-home{% endif %}" id="top">
     {% include "header.liquid" %}
-    <main id="main">
+    <main id="main" role="main">
       {% if permalink == "/" %}
         <div class="notehead">
           <div>

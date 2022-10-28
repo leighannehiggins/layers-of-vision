@@ -481,9 +481,9 @@ main img {
     margin: 0;
   }
 
-  h1,
-  h2 {
+  h1, h2 {
     font-weight: 700;
+    ;
     .layers {
       color: var(--secondary);
       font-size: 52px;
@@ -506,6 +506,14 @@ main img {
 
     a {
       text-decoration: none;
+
+      :hover {
+        svg {
+          rect {
+            fill: var(--secondary);
+          }
+        }
+      }
     }
 
     span {
@@ -730,7 +738,7 @@ input:checked + .slider:before {
   h3 {
     font-size: 54px;
   }
-
+  
   h4 {
     font-size: 42px;
   }

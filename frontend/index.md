@@ -1,5 +1,5 @@
 ---
-title: Layers of Vision
+title: Home
 permalink: /
 eleventyNavigation:
   key: Home

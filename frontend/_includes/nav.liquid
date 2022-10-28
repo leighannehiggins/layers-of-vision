@@ -1,6 +1,6 @@
 {% assign navPages = collections.all | eleventyNavigation: "Header" %}
 
-<nav class="main-nav" aria-label="Main navigation">
+<nav class="main-nav" role="navigation">
   <ul>
     <li>
       <a href="{{ '/' | url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>

@@ -4,8 +4,8 @@ eleventyComputed:
 layout: base.liquid
 ---
 
-{% assign previousArtist = collections.artists | getPreviousCollectionItem: page %}
-{% assign nextArtist = collections.artists | getNextCollectionItem: page %}
+{% assign previousArtist = collections.artists | sort: 'data.order' | getPreviousCollectionItem: page %}
+{% assign nextArtist = collections.artists | sort: 'data.order' | getNextCollectionItem: page %}
 
 {% comment %}
   {% if previousArtist %}
