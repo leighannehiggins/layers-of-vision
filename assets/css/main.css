@@ -227,6 +227,9 @@ button.to-top:hover svg,
 
 /* 2. Homepage */
 /* 3. Navigation */
+nav {
+  z-index: 1;
+}
 nav ul {
   font-weight: bold;
   list-style: none;
