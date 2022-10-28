@@ -12,8 +12,9 @@
 * 4. Main
 * 5. Media (Image, Audio, Video, etc.)
 * 6. Media queries
-* 7. Dark/Light
-* 8. Imports
+* 7. Dark/Light and font resizer
+* 8. Manual zoom
+* 9. Imports
 */
 /* 0. Variables */
 :root {
@@ -283,6 +284,10 @@ main p,
   line-height: 27px;
   margin-bottom: 50px;
 }
+main .transcript-btn,
+.main .transcript-btn {
+  margin-top: -15px;
+}
 
 .block {
   margin: 16px auto;
@@ -345,6 +350,11 @@ figcaption {
 
 figure {
   margin: 2em 0;
+}
+figure img {
+  border: 2px solid var(--primary);
+  box-sizing: border-box;
+  margin-bottom: -5px;
 }
 
 .icon {
@@ -566,6 +576,7 @@ input:checked + .slider:before {
     --text-anchor: #001923;
   }
 }
+/* 8. Manual zoom */
 .zoom {
   font-size: 20px;
 }
@@ -612,7 +623,7 @@ input:checked + .slider:before {
   line-height: 94px;
 }
 
-/* 8. Imports */
+/* 9. Imports */
 /* Custom fonts */
 @font-face {
   font-family: "Atkinson Hyperlegible";
