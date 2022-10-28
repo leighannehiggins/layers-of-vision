@@ -496,10 +496,7 @@ main img {
 
   h1,
   h2 {
-    height: 210px;
     margin: 0;
-    position: fixed;
-    width: 210px;
   }
 
   svg {
@@ -518,6 +515,15 @@ main img {
 /* 6. Media queries */
 
 @media screen and (min-width: 1024px) {
+  .lov-logo {
+    h1,
+    h2 {
+      height: 210px;
+      position: fixed;
+      width: 210px;
+    }
+  }
+
   .main-nav {
     background: var(--secondary);
     position: fixed;
@@ -549,7 +555,7 @@ main img {
     grid-template-columns: repeat(3, 1fr);
 
     // margin-top: -110px;
-    margin-top: 145px;
+    margin-top: 135px;
 
     div {
       grid-column: 2/4;
