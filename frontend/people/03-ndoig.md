@@ -18,3 +18,5 @@ teams:
 
 This is the bio text.
 Lorem ipsum
+
+Test editing messing up the next/prev order

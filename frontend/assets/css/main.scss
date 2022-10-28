@@ -481,6 +481,39 @@ main img {
     margin: 0;
   }
 
+  h1, h2 {
+    font-weight: 700;
+    ;
+    .layers {
+      color: var(--secondary);
+      font-size: 52px;
+      left: 15px;
+      top: -5px;
+    }
+
+    .of {
+      color: var(--secondary);
+      font-size: 34px;
+      left: 15px;
+      top: 55px;
+    }
+
+    .vision {
+      font-size: 46px;
+      left: 70px;
+      top: 60px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+    }
+  }
+
   svg {
     max-width: 210px;
 
