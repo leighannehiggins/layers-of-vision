@@ -350,6 +350,7 @@ video {
 figcaption {
   border: 2px solid var(--primary);
   border-top: 0;
+  font-size: 20px;
   padding: 24px;
 }
 
@@ -400,46 +401,18 @@ main img {
   fill: var(--secondary);
 }
 
+.lov-logo a:hover svg {
+  background-color: var(--primary);
+}
+.lov-logo a:hover svg .primary-color {
+  fill: var(--secondary);
+}
+.lov-logo a:hover svg .secondary-color {
+  fill: var(--primary);
+}
 .lov-logo h1,
 .lov-logo h2 {
   margin: 0;
-}
-.lov-logo h1,
-.lov-logo h2 {
-  font-weight: 700;
-}
-.lov-logo h1 .layers,
-.lov-logo h2 .layers {
-  color: var(--secondary);
-  font-size: 52px;
-  left: 15px;
-  top: -5px;
-}
-.lov-logo h1 .of,
-.lov-logo h2 .of {
-  color: var(--secondary);
-  font-size: 34px;
-  left: 15px;
-  top: 55px;
-}
-.lov-logo h1 .vision,
-.lov-logo h2 .vision {
-  font-size: 46px;
-  left: 70px;
-  top: 60px;
-}
-.lov-logo h1 a,
-.lov-logo h2 a {
-  text-decoration: none;
-}
-.lov-logo h1 a :hover svg rect,
-.lov-logo h2 a :hover svg rect {
-  fill: var(--secondary);
-}
-.lov-logo h1 span,
-.lov-logo h2 span {
-  display: block;
-  position: absolute;
 }
 .lov-logo svg {
   max-width: 210px;
@@ -449,16 +422,6 @@ main img {
 }
 .lov-logo svg .secondary-color {
   fill: var(--secondary);
-}
-.lov-logo svg .logo-font {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-weight: 700;
-}
-.lov-logo svg .logo-font-large {
-  font-size: 48px;
-}
-.lov-logo svg .logo-font-medium {
-  font-size: 32px;
 }
 
 /* 6. Media queries */
@@ -627,6 +590,9 @@ input:checked + .slider:before {
 .zoom button,
 .zoom .button {
   font-size: 40px;
+}
+.zoom figcaption {
+  font-size: 24px;
 }
 .zoom .footer-wrapper h3 {
   font-size: 24px;
