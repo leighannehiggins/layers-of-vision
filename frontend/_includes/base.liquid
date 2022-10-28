@@ -48,7 +48,7 @@ pageImageWebPath: "/assets/img/logos/favicon.png"
         {% comment %}
           If Homepage, don't show page title
         {% endcomment %}
-        {% if permalink != "/" %}
+        {% if permalink != "/" and layout != 'person.liquid' %}
           <h1 class="title">
             {{ title }}
           </h1>
