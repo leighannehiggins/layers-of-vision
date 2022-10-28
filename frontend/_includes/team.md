@@ -7,7 +7,7 @@ team: the key of a team (e.g. sdt), see metadata.json
 <ol>
   {%- for person in team_members -%}
     <li class="person">
-      {%- if person | hasContent -%}<a class="a-block" href="{{ person.url | url }}">{%- endif -%}
+      {%- if person | hasContent -%}<a href="{{ person.url | url }}">{%- endif -%}
         {{ person.data.firstName }} {{ person.data.lastName }}
       {%- if person | hasContent -%}</a>{%- endif -%}
     </li>
