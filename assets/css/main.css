@@ -287,6 +287,8 @@ main p,
 .block {
   margin: 16px auto;
   max-width: 900px;
+  position: relative;
+  z-index: 1;
 }
 
 .notehead div p {
