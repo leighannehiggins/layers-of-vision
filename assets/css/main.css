@@ -87,6 +87,10 @@ h4 {
   font-size: 28px;
 }
 
+.hidden {
+  display: none;
+}
+
 .large-font {
   font-size: 64px;
   line-height: 74px;
@@ -111,6 +115,10 @@ ol > li a:hover {
 
 p {
   margin: 0 0 0.5em;
+}
+
+.show {
+  display: block !important;
 }
 
 small {
@@ -239,6 +247,24 @@ nav ul li a:hover, nav ul li a.active {
   color: var(--secondary);
 }
 
+.navbar-burger {
+  cursor: pointer;
+  display: block;
+  height: 62px;
+  padding: 0 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 62px;
+}
+.navbar-burger span {
+  background-color: var(--primary);
+  display: block;
+  height: 2px;
+  margin: 10px 0;
+  width: 30px;
+}
+
 .main-nav {
   font-size: 32px;
 }
@@ -299,7 +325,6 @@ main .transcript-btn,
   border-top: 15px solid var(--primary);
   font-size: 32px;
   line-height: 40px;
-  margin-right: 16px;
   padding-top: 14px;
 }
 
@@ -424,6 +449,11 @@ main img {
 }
 
 /* 6. Media queries */
+@media screen and (max-width: 1023px) {
+  .main-nav {
+    display: none;
+  }
+}
 @media screen and (min-width: 1024px) {
   .lov-logo h1,
 .lov-logo h2 {
@@ -446,6 +476,12 @@ main img {
   }
   nav ul li:first-child {
     margin-left: 0;
+  }
+  .navbar-burger {
+    display: none;
+  }
+  .notehead div p {
+    margin-right: 16px;
   }
   .prev-next {
     position: fixed;

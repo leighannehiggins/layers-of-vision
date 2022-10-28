@@ -39,3 +39,23 @@ function toggleFont() {
 }
 
 fontToggler.addEventListener("click", toggleFont);
+
+// toggle aria-expanded attribute value for collapsed menu
+
+let hamburgerMenu = document.querySelector(".navbar-burger");
+let mainNav = document.querySelector(".main-nav");
+
+function toggleMenuAttr() {
+  let iconState = document
+    .querySelector(".navbar-burger")
+    .getAttribute("aria-expanded");
+  if (iconState === "false") {
+    hamburgerMenu.setAttribute("aria-expanded", "true");
+    mainNav.classList.toggle("show");
+  } else {
+    hamburgerMenu.setAttribute("aria-expanded", "false");
+    mainNav.classList.remove("show");
+  }
+}
+
+hamburgerMenu.addEventListener("click", toggleMenuAttr);
