@@ -92,29 +92,14 @@ h4 {
 }
 
 ol {
-  counter-reset: a;
   list-style: none;
   margin-left: 0;
-  position: relative;
+  padding-left: 0;
 }
 ol > li {
-  counter-increment: a;
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 40px;
-}
-ol > li::before {
-  border: 2px solid var(--primary);
-  box-sizing: border-box;
-  content: counter(a, decimal) "";
-  display: inline-block;
-  font-size: 40px;
-  height: 70px;
-  line-height: 1;
-  margin-right: 24px;
-  padding: 14px 0;
-  text-align: center;
-  width: 70px;
 }
 ol > li a {
   text-decoration: none;
