@@ -4,6 +4,7 @@ lastName: Raffaella
 artistWeb: artistWebsite.ext
 artistInsta: artistInstaHandle
 workImage: /assets/img/artists/placeholder.jpg
+altText: this will be the alt text of the image linked above
 workTitle: In The Rose Garden
 year: 2022
 workType: Installation of 3D prints and scaffolding

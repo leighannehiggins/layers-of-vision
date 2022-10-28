@@ -13,8 +13,9 @@
 * 4. Main
 * 5. Media (Image, Audio, Video, etc.)
 * 6. Media queries
-* 7. Dark/Light
-* 8. Imports
+* 7. Dark/Light and font resizer
+* 8. Manual zoom
+* 9. Imports
 */
 
 /* 0. Variables */
@@ -347,13 +348,16 @@ main,
     line-height: 27px;
     margin-bottom: 50px;
   }
+
+  .transcript-btn {
+    margin-top: -15px;
+  }
 }
 
 .block {
   margin: 16px auto;
   max-width: 900px;
   position: relative;
-  // z-index: 1;
 }
 
 .notehead {
@@ -423,6 +427,12 @@ figcaption {
 
 figure {
   margin: 2em 0;
+
+  img {
+    border: 2px solid var(--primary);
+    box-sizing: border-box;
+    margin-bottom: -5px;
+  }
 }
 
 .icon {
@@ -568,8 +578,6 @@ main img {
   .notehead {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-    // margin-top: -110px;
     margin-top: 135px;
 
     div {
@@ -586,8 +594,6 @@ main img {
 
   .not-home {
     main {
-      // margin-top: 145px;
-
       p {
         max-width: 664px;
       }
@@ -719,7 +725,7 @@ input:checked + .slider:before {
   }
 }
 
-// Manual zoom
+/* 8. Manual zoom */
 
 .zoom {
   font-size: 20px;
@@ -780,6 +786,6 @@ input:checked + .slider:before {
   }
 }
 
-/* 8. Imports */
+/* 9. Imports */
 
 @import "fonts";

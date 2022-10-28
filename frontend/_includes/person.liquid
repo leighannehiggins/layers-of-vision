@@ -50,13 +50,14 @@ layout: base.liquid
     <figcaption>Listen to lorem ipsum dolor</figcaption>
   </figure>
 
-  <div>
+  <div class="transcript-btn">
     <a href="{{ transcriptLink | url }}" class="button small">Download transcript</a>
   </div>
 
-  <div>
-    <img src="{{ workImage | url }}" alt="{{ workTitle }}">
-  </div>
+  <figure>
+    <img src="{{ workImage | url }}" alt="{{ altText }}">
+    <figcaption>Image caption</figcaption>
+  </figure>
 
   <h2>Artist Bio</h2>
   <div class="row-full">
