@@ -545,6 +545,21 @@ main img {
     }
   }
 
+  .prev-next {
+    position: fixed;
+    left: 0;
+    top: 230px;
+    width: 100%;
+
+    .next {
+      right: 0;
+    }
+
+    .prev {
+      left: 0;
+    }
+  }
+
   .kcl-logo {
     padding: 0 0 30px 0;
   }
@@ -578,7 +593,11 @@ main img {
       }
 
       .block {
-        margin-top: 105px;
+        margin-top: 130px;
+      }
+
+      .pre-title {
+        margin: 20px 0;
       }
     }
   }
