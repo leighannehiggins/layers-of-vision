@@ -548,7 +548,8 @@ main img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    margin-top: -110px;
+    // margin-top: -110px;
+    margin-top: 145px;
 
     div {
       grid-column: 2/4;
