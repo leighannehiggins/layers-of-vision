@@ -558,6 +558,24 @@ main img {
     display: none;
   }
 
+  .prev-next {
+    .button {
+      font-size: 20px;
+      line-height: 25px;
+      padding: 8px 15px;
+    }
+
+    &.row {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px;
+  
+      .col-end {
+        align-self: end;
+        text-align: right;
+      }
+    }
+  }
+
   .switch {
     position: absolute !important;
 
