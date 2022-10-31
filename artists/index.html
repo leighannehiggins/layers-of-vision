@@ -2,7 +2,7 @@
 <html lang="en-GB">
   <head>
     <meta charset="utf-8">
-    <!-- Built with 11ty - 2022-10-28 20:04 -->
+    <!-- Built with 11ty - 2022-10-31 15:22 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="King's Digital Lab, King's College London">
     <meta name="description" content="Layers of Vision is an art exhibition that explores the experiences and perspectives of blind and partially sighted (BPS) artists living in a world made for sighted people.">
@@ -18,8 +18,8 @@
       Layers of Vision
     </title>
     
-    <link rel="stylesheet" href="/layers-of-vision/assets/css/main.css?ts=1666987492">
-    <script src="/layers-of-vision/assets/js/navbar-toggle.js?ts=1666987492"></script>
+    <link rel="stylesheet" href="/layers-of-vision/assets/css/main.css?ts=1667229746">
+    <script src="/layers-of-vision/assets/js/navbar-toggle.js?ts=1667229746"></script>
   </head>
   <body class="type-page slug-artists not-home" id="top">
     <header role="banner">
@@ -91,6 +91,33 @@
     
   </ul>
 </nav>
+
+    <div class="switches mobile">
+    <!-- Font size switcher -->
+    <div class="switch-wrapper">
+      <label class="switch font-sizer" for="font-switcher">
+        <span class="sr-only">Toggle font size</span>
+        <input type="checkbox" name="font-resizer" id="font-switcher">
+        <div class="switch-icon round">
+          <p>
+            <small>A</small>A</p>
+        </div>
+      </label>
+    </div>
+
+    <!-- Dark/Light mode switcher -->
+    <div class="switch-wrapper">
+      <label class="switch theme" for="mode-switcher">
+        <span class="sr-only">Toggle Dark/Light Mode</span>
+        <input type="checkbox" name="dark-light-switcher" id="mode-switcher">
+        <div class="switch-icon round">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/>
+          </svg>
+        </div>
+      </label>
+    </div>
+  </div>
 </header>
     <main id="main" role="main">
       
@@ -168,28 +195,30 @@
 </footer>
 
     <!-- Font size switcher -->
-    <div class="switch-wrapper">
-      <label class="switch font-sizer" for="font-switcher">
-        <span class="sr-only">Toggle font size</span>
-        <input type="checkbox" name="font-resizer" id="font-switcher">
-        <div class="switch-icon round">
-          <p>
-            <small>A</small>A</p>
-        </div>
-      </label>
-    </div>
+    <div class="switches desktop">
+      <div class="switch-wrapper">
+        <label class="switch font-sizer" for="font-switcher">
+          <span class="sr-only">Toggle font size</span>
+          <input type="checkbox" name="font-resizer" id="font-switcher">
+          <div class="switch-icon round">
+            <p>
+              <small>A</small>A</p>
+          </div>
+        </label>
+      </div>
 
-    <!-- Dark/Light mode switcher -->
-    <div class="switch-wrapper">
-      <label class="switch theme" for="mode-switcher">
-        <span class="sr-only">Toggle Dark/Light Mode</span>
-        <input type="checkbox" name="dark-light-switcher" id="mode-switcher">
-        <div class="switch-icon round">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/>
-          </svg>
-        </div>
-      </label>
+      <!-- Dark/Light mode switcher -->
+      <div class="switch-wrapper">
+        <label class="switch theme" for="mode-switcher">
+          <span class="sr-only">Toggle Dark/Light Mode</span>
+          <input type="checkbox" name="dark-light-switcher" id="mode-switcher">
+          <div class="switch-icon round">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/>
+            </svg>
+          </div>
+        </label>
+      </div>
     </div>
 
     <!-- JS -->
