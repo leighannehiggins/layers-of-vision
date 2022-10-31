@@ -307,14 +307,16 @@ nav {
 
 // Hamburger menu
 .navbar-burger {
+  background: var(--secondary);
   cursor: pointer;
   display: block;
   height: 62px;
   padding: 0 14px;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 62px;
+  z-index: 100;
 
   span {
     background-color: var(--primary);
@@ -555,6 +557,27 @@ main img {
   .main-nav {
     display: none;
   }
+
+  .switch {
+    position: absolute !important;
+
+    &.font-sizer {
+      right: 0;
+      top: -152px;
+    }
+
+    &.theme {
+      top: -78px;
+    }
+  }
+
+  .switches {
+    position: relative;
+
+    &.desktop {
+      display: none;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -685,6 +708,12 @@ main img {
         line-height: 27px;
         margin: 0 0 8px;
       }
+    }
+  }
+
+  .switches {
+    &.mobile {
+      display: none;
     }
   }
 }
