@@ -21,14 +21,16 @@ layout: base.liquid
 </nav>
 
 <div class="artist block">
-  <div class="row pre-title">
+  {% comment %}
+    <div class="row pre-title">
     <div class="col-auto">
-      <span class="square">{{ order }}</span>
+    <span class="square">{{ order }}</span>
     </div>
     <div class="col-end">
-      <a href="#" class="button small">View Floorplan</a>
+    <a href="#" class="button small">View Floorplan</a>
     </div>
-  </div>
+    </div>
+  {% endcomment %}
   <h1 class="title">{{ title }}</h1>
   <h2>{{ workTitle }}</h2>
   <div class="row-full">
@@ -58,6 +60,8 @@ layout: base.liquid
     <img src="{{ workImage | url }}" alt="{{ altText }}">
     <figcaption>Image caption</figcaption>
   </figure>
+
+  <a href="#" class="button small">View Floorplan</a>
 
   <h2>Artist Bio</h2>
   <div class="row-full">
