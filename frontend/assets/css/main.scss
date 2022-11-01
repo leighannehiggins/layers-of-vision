@@ -109,7 +109,8 @@ ol {
     // counter-increment: a;
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 1.25em;
+    line-height: 1.15625em;
+    margin-bottom: .5em;
 
     // GF: removed numbering
     // &::before {
@@ -575,6 +576,12 @@ main img {
       width: calc(100vw - 107px);
     }
 
+    // .kcl-logo {
+    //   svg {
+    //     max-width: 163px;
+    //   }
+    // }
+
     .row {
       margin: 0;
     }
@@ -767,7 +774,7 @@ main img {
 
   ol {
     > li {
-      font-size: 80px;
+      font-size: 64px;
     }
   }
 
@@ -976,7 +983,7 @@ input:checked + .slider:before {
   }
 
   .person {
-    font-size: 40px;
+    font-size: 80px;
   }
 
   .main-nav {
