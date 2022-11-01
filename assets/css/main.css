@@ -59,6 +59,13 @@ a:focus {
   box-sizing: border-box;
 }
 
+.divider {
+  background-color: var(--primary);
+  display: block;
+  height: 15px;
+  margin: 15px 0 0 15px;
+}
+
 header {
   position: relative;
 }
@@ -439,6 +446,22 @@ main img {
 
 /* 6. Media queries */
 @media screen and (max-width: 1023px) {
+  .footer-large {
+    display: none;
+  }
+  .footer-nav {
+    padding: 15px;
+  }
+  .footer-nav li {
+    margin-top: 5px;
+  }
+  .footer-small .divider {
+    display: inline-flex;
+    width: calc(100vw - 107px);
+  }
+  .footer-small .row {
+    margin: 0;
+  }
   h1 {
     font-size: 40px;
   }
@@ -446,15 +469,22 @@ main img {
     font-size: 32px;
     line-height: 40px;
   }
+  h2.home-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
   h3 {
     font-size: 28px;
   }
   h4 {
     font-size: 24px;
   }
+  .kcl-logo {
+    padding: 15px;
+  }
   .large-font {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .main-nav {
     display: none;
@@ -471,18 +501,31 @@ main img {
   .main-nav.show li a {
     border: 0;
   }
-  .prev-next .button {
+  .prev-next .button,
+.small-screen .button {
     font-size: 20px;
     line-height: 25px;
     padding: 8px 15px;
   }
-  .prev-next.row {
+  .prev-next.row,
+.small-screen.row {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
   }
-  .prev-next.row .col-end {
+  .prev-next.row .col-end,
+.small-screen.row .col-end {
     align-self: end;
     text-align: right;
+  }
+  .social h3 {
+    display: block;
+    margin: 30px 15px 15px;
+  }
+  .social ul {
+    margin-left: 15px;
+  }
+  .social ul li {
+    margin-left: 0;
   }
   .switch {
     position: absolute !important;
@@ -500,8 +543,18 @@ main img {
   .switches.desktop {
     display: none;
   }
+  .to-top {
+    display: inline-flex;
+    float: right;
+    position: relative;
+    top: 0;
+    margin: 15px;
+  }
 }
 @media screen and (min-width: 1024px) {
+  .footer-small {
+    display: none;
+  }
   h1 {
     font-size: 94px;
   }
