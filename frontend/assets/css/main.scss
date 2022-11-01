@@ -72,6 +72,13 @@ a {
   }
 }
 
+.divider {
+  background-color: var(--primary);
+  display: block;
+  height: 15px;
+  margin: 15px 0 0 15px;
+}
+
 header {
   position: relative;
 }
@@ -550,6 +557,30 @@ main img {
 /* 6. Media queries */
 
 @media screen and (max-width: 1023px) {
+
+  .footer-large {
+    display: none;
+  }
+
+  .footer-nav {
+    padding: 15px;
+
+    li {
+      margin-top: 5px;
+    }
+  }
+
+  .footer-small {
+    .divider {
+      display: inline-flex;
+      width: calc(100vw - 107px);
+    }
+
+    .row {
+      margin: 0;
+    }
+  }
+
   // Headings
   h1 {
     font-size: 40px;
@@ -558,6 +589,11 @@ main img {
   h2 {
     font-size: 32px;
     line-height: 40px;
+
+    &.home-title {
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 
   h3 {
@@ -568,9 +604,13 @@ main img {
     font-size: 24px;
   }
 
+  .kcl-logo {
+    padding: 15px;
+  }
+
   .large-font {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .main-nav {
@@ -591,7 +631,8 @@ main img {
     }
   }
 
-  .prev-next {
+  .prev-next,
+  .small-screen {
     .button {
       font-size: 20px;
       line-height: 25px;
@@ -605,6 +646,21 @@ main img {
       .col-end {
         align-self: end;
         text-align: right;
+      }
+    }
+  }
+
+  .social {
+    h3 {
+      display: block;
+      margin: 30px 15px 15px;
+    }
+
+    ul {
+      margin-left: 15px;
+
+      li {
+        margin-left: 0;
       }
     }
   }
@@ -629,9 +685,21 @@ main img {
       display: none;
     }
   }
+
+  .to-top {
+    display: inline-flex;
+    float: right;
+    position: relative;
+    top: 0;
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .footer-small {
+    display: none;
+  }
+
   // Headings
   h1 {
     font-size: 94px;

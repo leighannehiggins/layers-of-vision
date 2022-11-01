@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-<h2>Living in a world made for sighted people</h2>
+<h2 class="home-title">Living in a world made for sighted people</h2>
 
 <a class="button" href="exhibition/">Find out more</a>
 
