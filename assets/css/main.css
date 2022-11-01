@@ -92,7 +92,8 @@ ol {
 ol > li {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 1.25em;
+  line-height: 1.15625em;
+  margin-bottom: 0.5em;
 }
 ol > li a {
   text-decoration: none;
@@ -601,7 +602,7 @@ main img {
     margin-right: 16px;
   }
   ol > li {
-    font-size: 80px;
+    font-size: 64px;
   }
   .prev-next {
     position: fixed;
@@ -757,7 +758,7 @@ input:checked + .slider:before {
   line-height: 1.4285em;
 }
 .zoom .person {
-  font-size: 40px;
+  font-size: 80px;
 }
 .zoom .main-nav {
   font-size: 48px;
