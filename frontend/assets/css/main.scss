@@ -557,7 +557,6 @@ main img {
 /* 6. Media queries */
 
 @media screen and (max-width: 1023px) {
-
   .footer-large {
     display: none;
   }
@@ -765,7 +764,7 @@ main img {
       }
     }
   }
-  
+
   ol {
     > li {
       font-size: 80px;
