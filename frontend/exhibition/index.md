@@ -39,7 +39,7 @@ following formats: printed text, large text, braille, and audio descriptions. QR
 
 ## Floorplan
 
-<div class="map">
+<div class="map" id="floorplan">
 <svg viewBox="0 0 1132 465" xmlns="http://www.w3.org/2000/svg">
 <title>A layout of the floorplan</title>
 <g clip-path="url(#clip0_1074_234)">
