@@ -612,6 +612,15 @@ main img {
 
   .kcl-logo {
     padding: 15px;
+
+    a {
+      display: block;
+    }
+
+    svg {
+      max-width: 164px;
+      min-height: 125px;
+    }
   }
 
   .large-font {
