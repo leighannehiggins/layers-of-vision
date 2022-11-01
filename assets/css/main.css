@@ -64,7 +64,6 @@ header {
 }
 
 h1 {
-  font-size: 94px;
   margin-top: 0;
 }
 
@@ -74,26 +73,8 @@ h4 {
   margin: 1em 0 0.5em;
 }
 
-h2 {
-  font-size: 64px;
-  line-height: 74px;
-}
-
-h3 {
-  font-size: 40px;
-}
-
-h4 {
-  font-size: 28px;
-}
-
 .hidden {
   display: none;
-}
-
-.large-font {
-  font-size: 64px;
-  line-height: 74px;
 }
 
 ol {
@@ -257,14 +238,20 @@ nav ul li a:hover, nav ul li a.active {
   right: 0;
   top: 0;
   width: 62px;
-  z-index: 100;
+  z-index: 10001;
 }
-.navbar-burger span {
+.navbar-burger span.lines {
   background-color: var(--primary);
   display: block;
   height: 2px;
   margin: 10px 0;
   width: 30px;
+}
+.navbar-burger[aria-expanded=false] .close {
+  display: none;
+}
+.navbar-burger[aria-expanded=true] .lines {
+  display: none;
 }
 
 .main-nav {
@@ -452,8 +439,37 @@ main img {
 
 /* 6. Media queries */
 @media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  .large-font {
+    font-size: 32px;
+    line-height: 40px;
+  }
   .main-nav {
     display: none;
+  }
+  .main-nav.show {
+    background-color: var(--secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+  }
+  .main-nav.show li a {
+    border: 0;
   }
   .prev-next .button {
     font-size: 20px;
@@ -486,6 +502,23 @@ main img {
   }
 }
 @media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 94px;
+  }
+  h2 {
+    font-size: 64px;
+    line-height: 74px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  .large-font {
+    font-size: 64px;
+    line-height: 74px;
+  }
   .lov-logo h1,
 .lov-logo h2 {
     height: 210px;

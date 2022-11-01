@@ -50,6 +50,7 @@ function toggleMenuAttr() {
     .querySelector(".navbar-burger")
     .getAttribute("aria-expanded");
   if (iconState === "false") {
+    hamburgerMenu.classList.toggle("opened");
     hamburgerMenu.setAttribute("aria-expanded", "true");
     mainNav.classList.toggle("show");
   } else {
