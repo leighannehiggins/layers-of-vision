@@ -78,7 +78,6 @@ header {
 
 // Headings
 h1 {
-  font-size: 94px;
   margin-top: 0;
 }
 
@@ -88,26 +87,8 @@ h4 {
   margin: 1em 0 0.5em;
 }
 
-h2 {
-  font-size: 64px;
-  line-height: 74px;
-}
-
-h3 {
-  font-size: 40px;
-}
-
-h4 {
-  font-size: 28px;
-}
-
 .hidden {
   display: none;
-}
-
-.large-font {
-  font-size: 64px;
-  line-height: 74px;
 }
 
 ol {
@@ -123,6 +104,7 @@ ol {
     font-weight: 700;
     margin-bottom: 40px;
 
+    // GF: removed numbering
     // &::before {
     //   border: 2px solid var(--primary);
     //   box-sizing: border-box;
@@ -554,6 +536,30 @@ main img {
 /* 6. Media queries */
 
 @media screen and (max-width: 1023px) {
+
+  // Headings
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .large-font {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
   .main-nav {
     display: none;
     
@@ -608,6 +614,30 @@ main img {
 }
 
 @media screen and (min-width: 1024px) {
+
+  // Headings
+  h1 {
+    font-size: 94px;
+  }
+
+  h2 {
+    font-size: 64px;
+    line-height: 74px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  .large-font {
+    font-size: 64px;
+    line-height: 74px;
+  }
+
   .lov-logo {
     h1,
     h2 {
