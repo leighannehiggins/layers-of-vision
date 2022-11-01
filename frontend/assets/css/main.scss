@@ -511,6 +511,7 @@ main img {
     max-width: 100%;
   }
 }
+
 .kcl-rect {
   fill: var(--primary);
 }
@@ -552,6 +553,32 @@ main img {
     .secondary-color {
       fill: var(--secondary);
     }
+  }
+}
+
+// SVG
+
+svg {
+  .primary-color {
+    fill: var(--primary);
+  }
+
+  .secondary-color {
+    fill: var(--secondary);
+  }
+
+  .primary-stroke {
+    stroke: var(--primary);
+  }
+
+  .secondary-stroke {
+    stroke: var(--secondary);
+  }
+}
+
+.map {
+  svg {
+    width: 100%;
   }
 }
 
