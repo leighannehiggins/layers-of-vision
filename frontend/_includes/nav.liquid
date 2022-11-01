@@ -1,8 +1,12 @@
 {% assign navPages = collections.all | eleventyNavigation: "Header" %}
 
 <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-top">
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
+  <span aria-hidden="true" class="lines"></span>
+  <span aria-hidden="true" class="lines"></span>
+  <span class="close">
+    <span aria-hidden="true">X</span>
+    <span class="sr-only">close menu</span>
+  </span>
 </button>
 
 <nav class="main-nav" role="navigation">

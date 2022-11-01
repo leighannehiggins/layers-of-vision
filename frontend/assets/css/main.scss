@@ -298,14 +298,28 @@ nav {
   right: 0;
   top: 0;
   width: 62px;
-  z-index: 100;
+  z-index: 10001;
 
   span {
-    background-color: var(--primary);
-    display: block;
-    height: 2px;
-    margin: 10px 0;
-    width: 30px;
+    &.lines {
+      background-color: var(--primary);
+      display: block;
+      height: 2px;
+      margin: 10px 0;
+      width: 30px;
+    }
+  }
+
+  &[aria-expanded="false"] {
+    .close {
+      display: none;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .lines {
+      display: none;
+    }
   }
 }
 
@@ -564,7 +578,13 @@ main img {
     display: none;
     
     &.show {
-      height: calc(100vh - 250px);
+      background-color: var(--secondary);
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1000;
 
       li a {
         border: 0;
