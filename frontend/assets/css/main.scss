@@ -556,6 +556,15 @@ main img {
 @media screen and (max-width: 1023px) {
   .main-nav {
     display: none;
+    
+    &.show {
+      height: calc(100vh - 250px);
+
+      li a {
+        border: 0;
+      }
+
+    }
   }
 
   .prev-next {
