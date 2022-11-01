@@ -550,7 +550,6 @@ main img {
 /* 6. Media queries */
 
 @media screen and (max-width: 1023px) {
-
   // Headings
   h1 {
     font-size: 40px;
@@ -576,7 +575,7 @@ main img {
 
   .main-nav {
     display: none;
-    
+
     &.show {
       background-color: var(--secondary);
       position: fixed;
@@ -589,7 +588,6 @@ main img {
       li a {
         border: 0;
       }
-
     }
   }
 
@@ -603,7 +601,7 @@ main img {
     &.row {
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 30px;
-  
+
       .col-end {
         align-self: end;
         text-align: right;
@@ -634,7 +632,6 @@ main img {
 }
 
 @media screen and (min-width: 1024px) {
-
   // Headings
   h1 {
     font-size: 94px;
