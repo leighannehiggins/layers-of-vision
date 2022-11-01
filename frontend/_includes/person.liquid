@@ -10,12 +10,18 @@ layout: base.liquid
 <nav class="row prev-next" aria-label="Artist list">
   <div class="col-auto">
     {% if previousArtist %}
-      <a href="{{ previousArtist.url | url }}" class="button prev">Previous</a>
+      <a href="{{ previousArtist.url | url }}" class="button prev">
+        Previous
+        <span class="sr-only">artist: {{ previousArtist.data.firstName }} {{ previousArtist.data.lastName }}</span>
+      </a>
     {% endif %}
   </div>
   <div class="col-end">
     {% if nextArtist %}
-      <a href="{{ nextArtist.url | url }}" class="button next">Next</a>
+      <a href="{{ nextArtist.url | url }}" class="button next">
+        Next
+        <span class="sr-only">artist: {{ nextArtist.data.firstName }} {{ nextArtist.data.lastName }}</span>
+      </a>
     {% endif %}
   </div>
 </nav>
