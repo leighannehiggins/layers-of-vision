@@ -109,7 +109,7 @@ ol {
     // counter-increment: a;
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 1.25em;
 
     // GF: removed numbering
     // &::before {
@@ -378,7 +378,7 @@ main,
 
   p {
     font-size: 20px;
-    line-height: 27px;
+    line-height: 1.35em;
     margin-bottom: 50px;
   }
 
@@ -398,7 +398,7 @@ main,
     p {
       border-top: 15px solid var(--primary);
       font-size: 32px;
-      line-height: 40px;
+      line-height: 1.25em;
       padding-top: 14px;
     }
   }
@@ -587,11 +587,11 @@ main img {
 
   h2 {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 1.25em;
 
     &.home-title {
       font-size: 40px;
-      line-height: 50px;
+      line-height: 1.25em;
     }
   }
 
@@ -852,7 +852,8 @@ main img {
       align-self: start;
 
       p {
-        line-height: 27px;
+        // line-height: 27px;
+        line-height: 1.35em;
         margin: 0 0 8px;
       }
     }
@@ -971,11 +972,11 @@ input:checked + .slider:before {
 
   p {
     font-size: 28px;
-    line-height: 40px;
+    line-height: 1.4285em;
   }
 
   .person {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .main-nav {
@@ -1005,7 +1006,7 @@ input:checked + .slider:before {
 
   .large-font {
     font-size: 80px;
-    line-height: 94px;
+    line-height: 1.175em;
   }
 }
 
