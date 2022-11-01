@@ -92,7 +92,7 @@ ol {
 ol > li {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 1.25em;
 }
 ol > li a {
   text-decoration: none;
@@ -303,7 +303,7 @@ main,
 main p,
 .main p {
   font-size: 20px;
-  line-height: 27px;
+  line-height: 1.35em;
   margin-bottom: 50px;
 }
 main .transcript-btn,
@@ -320,7 +320,7 @@ main .transcript-btn,
 .notehead div p {
   border-top: 15px solid var(--primary);
   font-size: 32px;
-  line-height: 40px;
+  line-height: 1.25em;
   padding-top: 14px;
 }
 
@@ -467,11 +467,11 @@ main img {
   }
   h2 {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 1.25em;
   }
   h2.home-title {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 1.25em;
   }
   h3 {
     font-size: 28px;
@@ -664,7 +664,7 @@ main img {
     align-self: start;
   }
   .row-full .col-start p {
-    line-height: 27px;
+    line-height: 1.35em;
     margin: 0 0 8px;
   }
   .switches.mobile {
@@ -754,10 +754,10 @@ input:checked + .slider:before {
 }
 .zoom p {
   font-size: 28px;
-  line-height: 40px;
+  line-height: 1.4285em;
 }
 .zoom .person {
-  font-size: 32px;
+  font-size: 40px;
 }
 .zoom .main-nav {
   font-size: 48px;
@@ -780,7 +780,7 @@ input:checked + .slider:before {
 }
 .zoom .large-font {
   font-size: 80px;
-  line-height: 94px;
+  line-height: 1.175em;
 }
 
 /* 9. Imports */
