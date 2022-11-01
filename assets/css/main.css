@@ -83,7 +83,7 @@ ol {
   padding-left: 0;
 }
 ol > li {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -547,6 +547,9 @@ main img {
   .notehead div p {
     margin-right: 16px;
   }
+  ol > li {
+    font-size: 80px;
+  }
   .prev-next {
     position: fixed;
     left: 0;
@@ -700,8 +703,8 @@ input:checked + .slider:before {
   font-size: 28px;
   line-height: 40px;
 }
-.zoom ol li {
-  font-size: 80px;
+.zoom .person {
+  font-size: 32px;
 }
 .zoom .main-nav {
   font-size: 48px;
