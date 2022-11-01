@@ -100,7 +100,7 @@ ol {
 
   > li {
     // counter-increment: a;
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px;
 
@@ -697,6 +697,12 @@ main img {
       }
     }
   }
+  
+  ol {
+    > li {
+      font-size: 80px;
+    }
+  }
 
   .prev-next {
     position: fixed;
@@ -901,8 +907,8 @@ input:checked + .slider:before {
     line-height: 40px;
   }
 
-  ol li {
-    font-size: 80px;
+  .person {
+    font-size: 32px;
   }
 
   .main-nav {
