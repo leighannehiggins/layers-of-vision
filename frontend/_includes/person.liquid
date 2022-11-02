@@ -64,8 +64,15 @@ layout: base.liquid
 
   <figure>
     <img src="{{ workImage | url }}" alt="{{ altText }}">
-    <figcaption>Image caption</figcaption>
+    <figcaption aria-hidden="true">{{ altText }}</figcaption>
   </figure>
+
+  {% if workImage2 %}
+    <figure>
+      <img src="{{ workImage2 | url }}" alt="{{ altText2 }}">
+      <figcaption aria-hidden="true">{{ altText2 }}</figcaption>
+    </figure>
+  {% endif %}
 
   <a href="{{ '/exhibition/#floorplan' | url }}" class="button small">View Floorplan</a>
 
