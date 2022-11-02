@@ -287,7 +287,7 @@ footer,
 }
 .footer-wrapper p.tag-line {
   font-size: 14px;
-  margin-top: 32px;
+  margin-top: 64px;
 }
 
 .to-top {
@@ -654,6 +654,9 @@ svg a:hover polygon {
   .kcl-logo {
     padding: 0 0 30px 0;
   }
+  .kcl-logo svg {
+    width: 200px;
+  }
   .notehead {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -817,6 +820,9 @@ input:checked + .slider:before {
 .zoom .large-font {
   font-size: 80px;
   line-height: 1.175em;
+}
+.zoom .lov-logo h2 {
+  line-height: 71px;
 }
 
 /* 9. Imports */
