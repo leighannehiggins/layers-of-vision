@@ -457,6 +457,17 @@ svg .primary-stroke {
 svg .secondary-stroke {
   stroke: var(--secondary);
 }
+svg a {
+  cursor: pointer;
+}
+svg a:hover {
+  stroke: var(--secondary);
+  stroke-width: 5px;
+}
+svg a:hover rect,
+svg a:hover polygon {
+  fill: var(--primary);
+}
 
 .map svg {
   width: 100%;
