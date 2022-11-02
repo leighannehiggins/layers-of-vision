@@ -5,7 +5,10 @@
 // const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
 
 const toggleSwitch = document.querySelector(
-  '.switch.theme input[type="checkbox"]'
+  '.switch.theme.desktop input[type="checkbox"]'
+);
+const toggleSwitchMob = document.querySelector(
+  '.switch.theme.mob input[type="checkbox"]'
 );
 const currentTheme = localStorage.getItem("theme");
 
@@ -15,6 +18,7 @@ if (currentTheme) {
 
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
+    toggleSwitchMob.checked = true;
   }
 }
 
@@ -30,15 +34,18 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+toggleSwitchMob.addEventListener("change", switchTheme, false);
 
 // Resize font
 let fontToggler = document.getElementById("font-switcher");
+let fontTogglerMob = document.getElementById("font-switcher-mob");
 
 function toggleFont() {
   document.getElementById("top").classList.toggle("zoom");
 }
 
 fontToggler.addEventListener("click", toggleFont);
+fontTogglerMob.addEventListener("click", toggleFont);
 
 // toggle aria-expanded attribute value for collapsed menu
 
