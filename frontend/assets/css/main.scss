@@ -574,6 +574,20 @@ svg {
   .secondary-stroke {
     stroke: var(--secondary);
   }
+
+  a {
+    cursor: pointer;
+
+    &:hover {
+      stroke: var(--secondary);
+      stroke-width: 5px;
+
+      rect,
+      polygon {
+        fill: var(--primary);
+      }
+    }
+  }
 }
 
 .map {
