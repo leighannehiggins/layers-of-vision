@@ -526,21 +526,21 @@ main img {
 
 // Lov Logo
 .lov-logo {
-  a {
-    &:hover {
-      svg {
-        background-color: var(--primary);
+  // a {
+  //   &:hover {
+  //     svg {
+  //       background-color: var(--primary);
 
-        .primary-color {
-          fill: var(--secondary);
-        }
+  //       .primary-color {
+  //         fill: var(--secondary);
+  //       }
 
-        .secondary-color {
-          fill: var(--primary);
-        }
-      }
-    }
-  }
+  //       .secondary-color {
+  //         fill: var(--primary);
+  //       }
+  //     }
+  //   }
+  // }
 
   h1,
   h2 {
@@ -602,7 +602,7 @@ svg {
 
 /* 6. Media queries */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1279px) {
   .footer-large {
     display: none;
   }
@@ -749,7 +749,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .footer-small {
     display: none;
   }
