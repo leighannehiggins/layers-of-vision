@@ -617,12 +617,6 @@ svg {
       width: calc(100vw - 107px);
     }
 
-    // .kcl-logo {
-    //   svg {
-    //     max-width: 163px;
-    //   }
-    // }
-
     .row {
       margin: 0;
     }
@@ -845,6 +839,10 @@ svg {
 
   .kcl-logo {
     padding: 0 0 30px 0;
+
+    svg {
+      width: 200px;
+    }
   }
 
   // Notehead
