@@ -15,16 +15,16 @@ Each artwork, in its own way, appreciates different forms of vision and features
 
 Feel, Follow, and Find your journey through Layers of Vision.
 
-<button class="button disabled inverted">Feel</button>
+<p class="fake"><span class="button inverted">Feel</span></p>
 
 the wall-mounted 3D map to experience a snapshot of the gallery space and exhibition layout.
 
-<button class="button disabled inverted">Follow</button>
+<p class="fake"><span class="button inverted">Follow</span></p>
 
 in an anticlockwise direction, our wayfinding signage on the floor to
 experience the artworks.
 
-<button class="button disabled inverted">Find</button>
+<p class="fake"><span class="button inverted">Find</span></p>
 
 close to each artwork a station that holds information on the artwork in
 following formats: printed text, large text, braille, and audio descriptions. QR codes will lead you to each artworks’ digital presence.
