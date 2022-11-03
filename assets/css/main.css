@@ -837,6 +837,9 @@ input:checked + .slider:before {
   font-size: 80px;
   line-height: 1.175em;
 }
+.zoom .lov-logo h1 {
+  line-height: 102px;
+}
 .zoom .lov-logo h2 {
   line-height: 71px;
 }
