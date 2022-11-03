@@ -22,6 +22,7 @@
   --secondary: #eefdfd;
   --font-color: #001923;
   --text-anchor: --primary;
+  --base-font-size: 16px;
 }
 
 [data-theme=dark] {
@@ -90,7 +91,7 @@ ol {
   padding-left: 0;
 }
 ol > li {
-  font-size: 32px;
+  font-size: calc(var(--base-font-size) * 2);
   font-weight: 700;
   line-height: 1.15625em;
   margin-bottom: 0.5em;
@@ -134,9 +135,9 @@ button,
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
-  font-size: 32px;
+  font-size: calc(var(--base-font-size) * 2);
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.25em;
   padding: 11px 21px;
   text-decoration: none;
 }
@@ -159,8 +160,8 @@ button.disabled:hover,
 }
 button.small,
 .button.small {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: calc(var(--base-font-size) * 1.25);
+  line-height: 1.25em;
   padding: 8px 15px;
 }
 button.to-top,
@@ -267,7 +268,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .main-nav {
-  font-size: 32px;
+  font-size: calc(var(--base-font-size) * 2);
 }
 
 footer,
@@ -276,7 +277,7 @@ footer,
 }
 
 .footer-wrapper {
-  font-size: 20px;
+  font-size: calc(var(--base-font-size) * 1.25);
   margin: 30px auto 0;
   max-width: 1134px;
 }
@@ -284,13 +285,13 @@ footer,
   padding: 8px 15px;
 }
 .footer-wrapper h3 {
-  font-size: 20px;
+  font-size: calc(var(--base-font-size) * 1.25);
 }
 .footer-wrapper p {
-  font-size: 20px;
+  font-size: calc(var(--base-font-size) * 1.25);
 }
 .footer-wrapper p.tag-line {
-  font-size: 14px;
+  font-size: calc(var(--base-font-size) * 0.875);
   margin-top: 64px;
 }
 
@@ -307,9 +308,9 @@ main,
 }
 main p,
 .main p {
-  font-size: 20px;
+  font-size: calc(var(--base-font-size) * 1.25);
   line-height: 1.35em;
-  margin-bottom: 50px;
+  margin-bottom: calc(var(--base-font-size) * 2.5);
 }
 main .transcript-btn,
 .main .transcript-btn {
@@ -324,7 +325,7 @@ main .transcript-btn,
 
 .notehead div p {
   border-top: 15px solid var(--primary);
-  font-size: 32px;
+  font-size: calc(var(--base-font-size) * 2);
   line-height: 1.25em;
   padding-top: 14px;
 }
@@ -332,7 +333,7 @@ main .transcript-btn,
 .square {
   border: 2px solid var(--primary);
   display: block;
-  font-size: 40px;
+  font-size: calc(var(--base-font-size) * 2.5);
   font-weight: 700;
   height: 62px;
   line-height: 62px;
@@ -370,7 +371,7 @@ video {
 figcaption {
   border: 2px solid var(--primary);
   border-top: 0;
-  font-size: 20px;
+  font-size: calc(var(--base-font-size) * 1.25);
   padding: 24px;
 }
 
@@ -428,6 +429,7 @@ main img {
 
 .lov-logo h1,
 .lov-logo h2 {
+  line-height: 1;
   margin: 0;
 }
 .lov-logo svg {
@@ -490,21 +492,21 @@ svg a:hover polygon {
     margin: 0;
   }
   h1 {
-    font-size: 40px;
+    font-size: calc(var(--base-font-size) * 2.5);
   }
   h2 {
-    font-size: 32px;
+    font-size: calc(var(--base-font-size) * 2);
     line-height: 1.25em;
   }
   h2.home-title {
-    font-size: 40px;
+    font-size: calc(var(--base-font-size) * 2.5);
     line-height: 1.25em;
   }
   h3 {
-    font-size: 28px;
+    font-size: calc(var(--base-font-size) * 1.75);
   }
   h4 {
-    font-size: 24px;
+    font-size: calc(var(--base-font-size) * 1.5);
   }
   .kcl-logo {
     padding: 15px;
@@ -517,8 +519,8 @@ svg a:hover polygon {
     min-height: 125px;
   }
   .large-font {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: calc(var(--base-font-size) * 2.5);
+    line-height: 1.25em;
   }
   .main-nav {
     display: none;
@@ -537,8 +539,8 @@ svg a:hover polygon {
   }
   .prev-next .button,
 .small-screen .button {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: calc(var(--base-font-size) * 1.25);
+    line-height: 1.25em;
     padding: 8px 15px;
   }
   .prev-next.row,
@@ -566,7 +568,7 @@ svg a:hover polygon {
   }
   .switch.font-sizer {
     right: 0;
-    top: -150px;
+    top: -149px;
   }
   .switch.theme {
     top: -80px;
@@ -590,25 +592,26 @@ svg a:hover polygon {
     display: none;
   }
   h1 {
-    font-size: 94px;
+    font-size: calc(var(--base-font-size) * 5.875);
   }
   h2 {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: calc(var(--base-font-size) * 4);
+    line-height: 1.15625em;
   }
   h3 {
-    font-size: 40px;
+    font-size: calc(var(--base-font-size) * 2);
   }
   h4 {
-    font-size: 28px;
+    font-size: calc(var(--base-font-size) * 1.75);
   }
   .large-font {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: calc(var(--base-font-size) * 4);
+    line-height: 1.15625em;
   }
   .lov-logo h1,
 .lov-logo h2 {
     height: 210px;
+    line-height: 1;
     position: fixed;
     width: 210px;
   }
@@ -638,7 +641,7 @@ svg a:hover polygon {
     display: none;
   }
   ol > li {
-    font-size: 64px;
+    font-size: calc(var(--base-font-size) * 4);
   }
   .prev-next {
     position: fixed;
@@ -755,7 +758,7 @@ svg a:hover polygon {
   outline-offset: 4px;
 }
 .switch.font-sizer {
-  font-size: 34px;
+  font-size: calc(var(--base-font-size) * 2.125);
   line-height: 1;
 }
 .switch.font-sizer p {
@@ -793,55 +796,7 @@ input:checked + .slider:before {
 }
 /* 8. Manual zoom */
 .zoom {
-  font-size: 20px;
-}
-.zoom h1 {
-  font-size: 120px;
-}
-.zoom h2 {
-  font-size: 80px;
-}
-.zoom h3 {
-  font-size: 54px;
-}
-.zoom h4 {
-  font-size: 42px;
-}
-.zoom p {
-  font-size: 28px;
-  line-height: 1.4285em;
-}
-.zoom .person {
-  font-size: 80px;
-}
-.zoom .main-nav {
-  font-size: 48px;
-}
-.zoom .footer-nav {
-  font-size: 24px;
-}
-.zoom .notehead p {
-  font-size: 40px;
-}
-.zoom button,
-.zoom .button {
-  font-size: 40px;
-}
-.zoom figcaption {
-  font-size: 24px;
-}
-.zoom .footer-wrapper h3 {
-  font-size: 24px;
-}
-.zoom .large-font {
-  font-size: 80px;
-  line-height: 1.175em;
-}
-.zoom .lov-logo h1 {
-  line-height: 102px;
-}
-.zoom .lov-logo h2 {
-  line-height: 71px;
+  --base-font-size: 20px;
 }
 
 /* 9. Imports */
