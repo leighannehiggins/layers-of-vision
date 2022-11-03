@@ -603,7 +603,6 @@ svg {
 /* 6. Media queries */
 
 @media screen and (max-width: 1279px) {
-
   .desktop {
     display: none;
   }
@@ -755,7 +754,6 @@ svg {
 }
 
 @media screen and (min-width: 1280px) {
-
   .footer-small {
     display: none;
   }
@@ -824,7 +822,7 @@ svg {
         margin-right: 16px;
       }
     }
-    
+
     &.mobile {
       display: none;
     }
