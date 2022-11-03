@@ -526,22 +526,6 @@ main img {
 
 // Lov Logo
 .lov-logo {
-  // a {
-  //   &:hover {
-  //     svg {
-  //       background-color: var(--primary);
-
-  //       .primary-color {
-  //         fill: var(--secondary);
-  //       }
-
-  //       .secondary-color {
-  //         fill: var(--primary);
-  //       }
-  //     }
-  //   }
-  // }
-
   h1,
   h2 {
     margin: 0;
@@ -1094,6 +1078,10 @@ input:checked + .slider:before {
   }
 
   .lov-logo {
+    h1 {
+      line-height: 102px;
+    }
+    
     h2 {
       line-height: 71px;
     }
