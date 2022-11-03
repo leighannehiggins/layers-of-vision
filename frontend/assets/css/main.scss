@@ -29,6 +29,8 @@
 
   --font-color: #001923;
   --text-anchor: --primary;
+
+  --base-font-size: 16px;
 }
 
 [data-theme="dark"] {
@@ -99,33 +101,15 @@ h4 {
 }
 
 ol {
-  // counter-reset: a;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  // position: relative;
 
   > li {
-    // counter-increment: a;
-    font-size: 32px;
+    font-size: calc(var(--base-font-size) * 2);
     font-weight: 700;
     line-height: 1.15625em;
     margin-bottom: 0.5em;
-
-    // GF: removed numbering
-    // &::before {
-    //   border: 2px solid var(--primary);
-    //   box-sizing: border-box;
-    //   content: counter(a, decimal) "";
-    //   display: inline-block;
-    //   font-size: 40px;
-    //   height: 70px;
-    //   line-height: 1;
-    //   margin-right: 24px;
-    //   padding: 14px 0;
-    //   text-align: center;
-    //   width: 70px;
-    // }
 
     a {
       text-decoration: none;
@@ -137,7 +121,6 @@ ol {
 }
 
 p {
-  // line-height: 27px;
   margin: 0 0 0.5em;
 }
 
@@ -171,9 +154,9 @@ button,
   border: 2px solid var(--primary);
   color: var(--primary);
   display: inline-block;
-  font-size: 32px;
+  font-size: calc(var(--base-font-size) * 2);
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.25em;
   padding: 11px 21px;
   text-decoration: none;
 
@@ -197,8 +180,8 @@ button,
   }
 
   &.small {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: calc(var(--base-font-size) * 1.25);;
+    line-height: 1.25em;
     padding: 8px 15px;
   }
 
@@ -336,7 +319,7 @@ nav {
 }
 
 .main-nav {
-  font-size: 32px;
+  font-size: calc(var(--base-font-size) * 2);
 }
 
 footer,
@@ -345,7 +328,7 @@ footer,
 }
 
 .footer-wrapper {
-  font-size: 20px;
+  font-size: calc(var(--base-font-size) * 1.25);
   margin: 30px auto 0;
   max-width: 1134px;
 
@@ -356,14 +339,14 @@ footer,
   }
 
   h3 {
-    font-size: 20px;
+    font-size: calc(var(--base-font-size) * 1.25);
   }
 
   p {
-    font-size: 20px;
+    font-size: calc(var(--base-font-size) * 1.25);
 
     &.tag-line {
-      font-size: 14px;
+      font-size: calc(var(--base-font-size) * 0.875);
       margin-top: 64px;
     }
   }
@@ -382,9 +365,9 @@ main,
   padding: 16px;
 
   p {
-    font-size: 20px;
+    font-size: calc(var(--base-font-size) * 1.25);
     line-height: 1.35em;
-    margin-bottom: 50px;
+    margin-bottom: calc(var(--base-font-size) * 2.5);
   }
 
   .transcript-btn {
@@ -402,7 +385,7 @@ main,
   div {
     p {
       border-top: 15px solid var(--primary);
-      font-size: 32px;
+      font-size: calc(var(--base-font-size) * 2);
       line-height: 1.25em;
       padding-top: 14px;
     }
@@ -413,7 +396,7 @@ main,
 .square {
   border: 2px solid var(--primary);
   display: block;
-  font-size: 40px;
+  font-size: calc(var(--base-font-size) * 2.5);
   font-weight: 700;
   height: 62px;
   line-height: 62px;
@@ -458,7 +441,7 @@ video {
 figcaption {
   border: 2px solid var(--primary);
   border-top: 0;
-  font-size: 20px;
+  font-size: calc(var(--base-font-size) * 1.25);
   padding: 24px;
 }
 
@@ -528,6 +511,7 @@ main img {
 .lov-logo {
   h1,
   h2 {
+    line-height: 1;
     margin: 0;
   }
 
@@ -545,7 +529,6 @@ main img {
 }
 
 // SVG
-
 svg {
   .primary-color {
     fill: var(--primary);
@@ -616,25 +599,25 @@ svg {
 
   // Headings
   h1 {
-    font-size: 40px;
+    font-size: calc(var(--base-font-size) * 2.5);
   }
 
   h2 {
-    font-size: 32px;
+    font-size: calc(var(--base-font-size) * 2);
     line-height: 1.25em;
 
     &.home-title {
-      font-size: 40px;
+      font-size: calc(var(--base-font-size) * 2.5);
       line-height: 1.25em;
     }
   }
 
   h3 {
-    font-size: 28px;
+    font-size: calc(var(--base-font-size) * 1.75);
   }
 
   h4 {
-    font-size: 24px;
+    font-size: calc(var(--base-font-size) * 1.5);
   }
 
   .kcl-logo {
@@ -651,8 +634,8 @@ svg {
   }
 
   .large-font {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: calc(var(--base-font-size) * 2.5);
+    line-height: 1.25em;
   }
 
   .main-nav {
@@ -676,8 +659,8 @@ svg {
   .prev-next,
   .small-screen {
     .button {
-      font-size: 20px;
-      line-height: 25px;
+      font-size: calc(var(--base-font-size) * 1.25);
+      line-height: 1.25em;
       padding: 8px 15px;
     }
 
@@ -712,7 +695,7 @@ svg {
 
     &.font-sizer {
       right: 0;
-      top: -150px;
+      top: -149px;
     }
 
     &.theme {
@@ -744,31 +727,32 @@ svg {
 
   // Headings
   h1 {
-    font-size: 94px;
+    font-size: calc(var(--base-font-size) * 5.875);;
   }
 
   h2 {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: calc(var(--base-font-size) * 4);
+    line-height: 1.15625em;
   }
 
   h3 {
-    font-size: 40px;
+    font-size: calc(var(--base-font-size) * 2);
   }
 
   h4 {
-    font-size: 28px;
+    font-size: calc(var(--base-font-size) * 1.75);
   }
 
   .large-font {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: calc(var(--base-font-size) * 4);
+    line-height: 1.15625em;
   }
 
   .lov-logo {
     h1,
     h2 {
       height: 210px;
+      line-height: 1;
       position: fixed;
       width: 210px;
     }
@@ -814,7 +798,7 @@ svg {
 
   ol {
     > li {
-      font-size: 64px;
+      font-size: calc(var(--base-font-size) * 4);
     }
   }
 
@@ -903,7 +887,6 @@ svg {
       align-self: start;
 
       p {
-        // line-height: 27px;
         line-height: 1.35em;
         margin: 0 0 8px;
       }
@@ -970,7 +953,7 @@ svg {
   }
 
   &.font-sizer {
-    font-size: 34px;
+    font-size: calc(var(--base-font-size) * 2.125);
     line-height: 1;
 
     p {
@@ -1020,72 +1003,7 @@ input:checked + .slider:before {
 /* 8. Manual zoom */
 
 .zoom {
-  font-size: 20px;
-
-  h1 {
-    font-size: 120px;
-  }
-
-  h2 {
-    font-size: 80px;
-  }
-
-  h3 {
-    font-size: 54px;
-  }
-
-  h4 {
-    font-size: 42px;
-  }
-
-  p {
-    font-size: 28px;
-    line-height: 1.4285em;
-  }
-
-  .person {
-    font-size: 80px;
-  }
-
-  .main-nav {
-    font-size: 48px;
-  }
-
-  .footer-nav {
-    font-size: 24px;
-  }
-
-  .notehead p {
-    font-size: 40px;
-  }
-
-  button,
-  .button {
-    font-size: 40px;
-  }
-
-  figcaption {
-    font-size: 24px;
-  }
-
-  .footer-wrapper h3 {
-    font-size: 24px;
-  }
-
-  .large-font {
-    font-size: 80px;
-    line-height: 1.175em;
-  }
-
-  .lov-logo {
-    h1 {
-      line-height: 102px;
-    }
-    
-    h2 {
-      line-height: 71px;
-    }
-  }
+  --base-font-size: 20px;
 }
 
 /* 9. Imports */
