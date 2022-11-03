@@ -943,6 +943,7 @@ svg {
 
 .swtich-wrapper {
   display: flex;
+  position: relative;
 }
 
 .switch {
@@ -965,7 +966,23 @@ svg {
   }
 
   input {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    opacity: 0;
+
+    /* 
+      Since the checkbox is not visible, moving the focus state 
+      to the icon in the switch.
+      Ref: Sara Souiedan https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
+    */
+
+    &:focus + .switch-icon {
+      outline: 3px solid $kings-red;
+      outline-offset: 4px;
+    }
   }
 
   &.font-sizer {
