@@ -40,7 +40,5 @@
     "string-strip-html": "^8.3.0",
     "twitter": "^1.7.1"
   },
-  "dependencies": {
-    "bulma": "^0.9.4"
-  }
+  "dependencies": {}
 }
