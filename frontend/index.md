@@ -11,6 +11,16 @@ eleventyNavigation:
 
 <a class="button" href="exhibition/">Find out more</a>
 
+<div class="notehead mobile">
+  <div>
+    <p>
+      <strong>21st November &mdash; 16th December</strong><br>
+      Coinciding with UK Disability History Month<br>
+      Free, no booking required
+    </p>
+  </div>
+</div>
+
 <!-- Audio block -->
 <figure>
   <audio controls src="/media/file.mp3">
