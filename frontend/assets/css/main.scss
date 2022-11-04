@@ -180,7 +180,7 @@ button,
   }
 
   &.small {
-    font-size: calc(var(--base-font-size) * 1.25);;
+    font-size: calc(var(--base-font-size) * 1.25);
     line-height: 1.25em;
     padding: 8px 15px;
   }
@@ -248,7 +248,6 @@ button,
 }
 
 /* 2. Homepage */
-
 
 /* 3. Navigation */
 
@@ -728,7 +727,7 @@ svg {
 
   // Headings
   h1 {
-    font-size: calc(var(--base-font-size) * 5.875);;
+    font-size: calc(var(--base-font-size) * 5.875);
   }
 
   h2 {
@@ -743,7 +742,7 @@ svg {
   h4 {
     font-size: calc(var(--base-font-size) * 1.75);
   }
-  
+
   // Logo animation on homepage
   .home {
     .lov-logo {
@@ -753,7 +752,7 @@ svg {
       }
 
       position: fixed;
-      
+
       &.animation {
         animation: 2s linear lovLogo;
         animation-fill-mode: forwards; // the animation stops at the last frame
