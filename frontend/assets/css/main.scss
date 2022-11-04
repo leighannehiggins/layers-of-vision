@@ -754,7 +754,7 @@ svg {
       position: fixed;
 
       &.animation {
-        animation: 2s linear lovLogo;
+        animation: 1s linear lovLogo;
         animation-fill-mode: forwards; // the animation stops at the last frame
       }
     }
