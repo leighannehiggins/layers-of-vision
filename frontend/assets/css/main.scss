@@ -249,6 +249,7 @@ button,
 
 /* 2. Homepage */
 
+
 /* 3. Navigation */
 
 nav {
@@ -741,6 +742,26 @@ svg {
 
   h4 {
     font-size: calc(var(--base-font-size) * 1.75);
+  }
+  
+  // Logo animation
+
+  .home {
+    .lov-logo {
+      animation: 3s reverse lovLogo;
+    }
+
+    @keyframes lovLogo {
+      from {
+        transform: scale(1) translate(0, 0);
+        transform-origin: top left;
+      }
+
+      to {
+        transform: scale(2) translate(0, 0);
+        transform-origin: top left;
+      }
+    }
   }
 
   .large-font {
