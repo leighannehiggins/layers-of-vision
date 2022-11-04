@@ -612,7 +612,7 @@ svg a:hover polygon {
     max-width: 420px;
   }
   .home .lov-logo.animation {
-    animation: 2s linear lovLogo;
+    animation: 1s linear lovLogo;
     animation-fill-mode: forwards;
   }
   @keyframes lovLogo {
