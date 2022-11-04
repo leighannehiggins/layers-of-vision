@@ -604,6 +604,19 @@ svg a:hover polygon {
   h4 {
     font-size: calc(var(--base-font-size) * 1.75);
   }
+  .home .lov-logo {
+    animation: 3s reverse lovLogo;
+  }
+  @keyframes lovLogo {
+    from {
+      transform: scale(1) translate(0, 0);
+      transform-origin: top left;
+    }
+    to {
+      transform: scale(2) translate(0, 0);
+      transform-origin: top left;
+    }
+  }
   .large-font {
     font-size: calc(var(--base-font-size) * 4);
     line-height: 1.15625em;
