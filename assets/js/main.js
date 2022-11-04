@@ -67,3 +67,13 @@ function toggleMenuAttr() {
 }
 
 hamburgerMenu.addEventListener("click", toggleMenuAttr);
+
+// Trigger logo animation on homepage on first scroll only
+let homeLogo = document.querySelector(".lov-logo");
+
+function animateLogo() {
+  homeLogo.classList.add("animation");
+  homeLogo.classList.add("regular");
+}
+
+window.addEventListener("scroll", animateLogo, { once: true });
