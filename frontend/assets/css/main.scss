@@ -744,11 +744,20 @@ svg {
     font-size: calc(var(--base-font-size) * 1.75);
   }
   
-  // Logo animation
-
+  // Logo animation on homepage
   .home {
     .lov-logo {
-      animation: 3s reverse lovLogo;
+      svg {
+        height: 420px;
+        max-width: 420px;
+      }
+
+      position: fixed;
+      
+      &.animation {
+        animation: 2s linear lovLogo;
+        animation-fill-mode: forwards; // the animation stops at the last frame
+      }
     }
 
     @keyframes lovLogo {
@@ -758,7 +767,7 @@ svg {
       }
 
       to {
-        transform: scale(2) translate(0, 0);
+        transform: scale(0.5) translate(0, 0);
         transform-origin: top left;
       }
     }
