@@ -483,11 +483,11 @@ figure {
   width: 100%;
 }
 
-[style*="--aspect-ratio"] > img {  
+[style*="--aspect-ratio"] > img {
   height: auto;
 }
 
-@supports (--custom:property) {
+@supports (--custom: property) {
   [style*="--aspect-ratio"] {
     position: relative;
   }
@@ -503,10 +503,8 @@ figure {
     top: 0;
     left: 0;
     height: 100%;
-  }  
+  }
 }
-
-
 
 main img {
   width: 100%;
