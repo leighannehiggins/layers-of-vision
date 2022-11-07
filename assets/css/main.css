@@ -183,6 +183,10 @@ button.to-top:hover svg,
   stroke: var(--secondary);
 }
 
+span.button.inverted {
+  cursor: default;
+}
+
 .fake {
   margin: -10px 0 25px;
 }
