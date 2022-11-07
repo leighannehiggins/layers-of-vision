@@ -66,6 +66,24 @@ layout: base.liquid
     </div>
   {% endif %}
 
+  {% if workVideo %}
+    <!-- Video block -->
+    <figure>
+      <video controls>
+        <source src="{{ workVideoWebm }}" type="video/webm">
+        <source src="{{ workVideoMp4 }}" type="video/mp4">
+        Download the
+        <a href="{{ workVideoWebm }}">WEBM</a>
+        or
+        <a href="{{ workVideoMp4 }}">MP4</a>
+        video.
+      </video>
+      {% if workVideoCaption %}
+        <figcaption>workVideoCaption</figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+
   <figure>
     <img src="{{ workImage | url }}" alt="{{ altText }}">
     <figcaption aria-hidden="true">{{ altText }}</figcaption>

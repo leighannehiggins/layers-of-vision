@@ -9,6 +9,9 @@ workImage2:
 altText2:
 workImage3:
 altText3:
+workVideoMp4:
+workVideoWebm:
+workVideoCaption:
 workTitle: Decoding Difference
 year: 2022
 workType: Installation of 3D prints and scaffolding
