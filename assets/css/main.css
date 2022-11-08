@@ -270,6 +270,9 @@ nav ul li a:hover, nav ul li a.active {
 .navbar-burger[aria-expanded=true] .lines {
   display: none;
 }
+.navbar-burger:hover span.lines {
+  background-color: var(--secondary);
+}
 
 .main-nav {
   font-size: calc(var(--base-font-size) * 2);
