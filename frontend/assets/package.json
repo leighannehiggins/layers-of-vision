@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bulma": "^0.9.4",
     "timeago.js": "^4.0.2"
   }
 }
