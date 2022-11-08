@@ -320,6 +320,14 @@ nav {
       display: none;
     }
   }
+
+  &:hover {
+    span {
+      &.lines {
+        background-color: var(--secondary);
+      }
+    }
+  }
 }
 
 .main-nav {
