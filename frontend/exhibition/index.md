@@ -31,10 +31,10 @@ following formats: printed text, large text, braille, and audio descriptions. QR
 
 <!-- Audio block -->
 <figure>
-  <audio controls src="/media/file.mp3">
-    <a href="/media/file.mp3">Download audio</a>
+  <audio controls src="{{ '/assets/audio/LoV_exhibition_page_audio.mp3' | url }}">
+	<a href="{{ '/assets/audio/LoV_exhibition_page_audio.mp3' | url }}">Download audio</a>
   </audio>
-  <figcaption>Listen to lorem ipsum dolor</figcaption>
+  <figcaption>Listen to Dr. Anica Zeyen decsribe the exhibition</figcaption>
 </figure>
 
 ## Floorplan
