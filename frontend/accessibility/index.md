@@ -53,7 +53,6 @@ And these are the pages tested:
   - [David Johnson](/people/10-djohnson/)
 - [Plan your visit](/plan-your-visit/)
 - [Terms and Conditions](/terms-and-conditions/)
-- [Privacy Policy](/privacy-policy/)
 - [Cookies](/cookies/)
 
 This page is based on the [sample template](https://www.gov.uk/government/publications/sample-accessibility-statement/sample-accessibility-statement-for-a-fictional-public-sector-website) provided by gov.uk.
