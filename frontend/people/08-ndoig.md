@@ -1,11 +1,11 @@
 ---
 firstName: Natalie
 lastName: Doig
-artistWeb: artistWebsite.ext
-artistInsta: artistInstaHandle
-artistTwitter: artistTwitterHandle
-workImage: /assets/img/artists/placeholder.jpg
-altText: this will be the alt text of the image linked above
+artistWeb:
+artistInsta:
+artistTwitter:
+workImage:
+altText:
 workImage2:
 altText2:
 workImage3:
@@ -17,11 +17,11 @@ workVideoWebm:
 workVideoCaption:
 workTitle: Seeking Solitude
 year: 2022
-workType: Installation of 3D prints and scaffolding
-workSize: 250cm x 200cm x 100cm
-workDescription: This installation is a triptych of scaled down 3D printed figures of the artist moving through a delineated space. Using the accuracy of digital technology, this piece grants access for the first time for the blind artist to his own body. The figures are framed with layers of scaffolding that are a parody of gallery casements. Through granting every visitor, sight disabled or otherwise, access to the touchable figures, it offers something close to equality of experience.
-audioLink: fullUrlforAudio
-transcriptLink: fullUrlforTranscript
+workType:
+workSize:
+workDescription:
+audioLink:
+transcriptLink:
 order: 8
 teams:
   - artists

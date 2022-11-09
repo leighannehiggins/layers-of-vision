@@ -3,12 +3,15 @@ firstName: Bianca
 lastName: Raffaella
 artistWeb: biancaraffaella.com
 artistInsta: biancaraffaella
+artistTwitter:
 workImage: /assets/img/artists/placeholder.jpg
 altText: this will be the alt text of the image linked above
 workImage2:
 altText2:
 workImage3:
 altText3:
+workImage4:
+altText4:
 workVideoMp4:
 workVideoWebm:
 workVideoCaption:
@@ -17,8 +20,8 @@ year: 2022
 workType: Collage installation of tissue paper and acrylic on four canvases
 workSize: 90 × 65 × 1 cm each
 workDescription: In The Rose Garden is a polyptych image of a wild rose bush. The coloured image on the top left shows the rosebush how Bianca sees it through her left eye. The coloured image on the top right pictures the rosebush through her right eye. White versions of the same rosebush images sit below the coloured ones and represent what it is like to rely on touch but no vision. This artwork challenges the traditional and the inaccessible in the contemporary visual arts.
-audioLink: /assets/audio/
-transcriptLink: /assets/transcript/
+audioLink:
+transcriptLink:
 order: 1
 teams:
   - artists
