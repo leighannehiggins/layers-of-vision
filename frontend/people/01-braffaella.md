@@ -1,8 +1,8 @@
 ---
 firstName: Bianca
 lastName: Raffaella
-artistWeb: biancarafaella.com
-artistInsta: b_raffaella92
+artistWeb: biancaraffaella.com
+artistInsta: biancaraffaella
 workImage: /assets/img/artists/placeholder.jpg
 altText: this will be the alt text of the image linked above
 workImage2:
