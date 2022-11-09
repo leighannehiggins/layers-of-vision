@@ -15,26 +15,45 @@ We’ve also made the website text as simple as possible to understand.
 
 [AbilityNet](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use if you have a disability.
 
-## <a id="how"></a>How accessible this website is
-
 ## Reporting accessibility problems with this website
 
-Please email [TODO: add contact email] with details of the problems.
+Please email <a href="mailto:katharina.husemann@kcl.ac.uk">katharina.husemann@kcl.ac.uk</a> with details of the problems.
 
 ## Compliance status
 
-This website is compliant with the Web Content Accessibility Guidelines version 2.1 AA standard.
-
-## What we’re doing to improve accessibility
+This website is compliant with the Web Content Accessibility Guidelines (WCAG) version 2.1 AA standard.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on [TODO: add date]. It was **last reviewed on [TODO: add date]**.
+This statement was prepared on 9 November 2022. It was **last reviewed on 9 November 2022**.
 
-This website was last tested on [TODO: add date]. The test was carried out by KDL.
+This website was last tested on 7 November 2022. The test was carried out by KDL.
 
-We used this approach to decide on a sample of pages to test:
+These tools used to ensure the pages comply with WCAG ver 2.1 AA standard are:
 
-[TODO: add list of pages tested]
+- [Siteimprove accessibility checker](https://www.siteimprove.com/toolkit/accessibility-checker/)
+- [Lighthouse](https://github.com/GoogleChrome/lighthouse)
+- [WAVE](https://wave.webaim.org/)
+- [VoiceOver](https://support.apple.com/en-gb/guide/voiceover-guide/welcome/web)
+
+And these are the pages tested:
+
+- [Homepage](/)
+- [The Exhibition](/exhibition/)
+- [Artists](/artists/)
+  - [Bianca Raffaella](/people/01-braffaella/)
+  - [Mickel Smithen](/people/02-msmithen/)
+  - [Clarke Reynolds](/people/03-creynolds/)
+  - [Aaron McPeake](/people/04-amcpeake/)
+  - [Zoe Partington](/people/05-zpartington/)
+  - [Alice Christina-Corrigan](/people/06-achristina-corrigan/)
+  - [Sally Booth](/people/07-sbooth/)
+  - [Natalie Doig](/people/08-ndoig/)
+  - [Fae Kilburn](/people/09-fkilburn/)
+  - [David Johnson](/people/10-djohnson/)
+- [Plan your visit](/plan-your-visit/)
+- [Terms and Conditions](/terms-and-conditions/)
+- [Privacy Policy](/privacy-policy/)
+- [Cookies](/cookies/)
 
 This page is based on the [sample template](https://www.gov.uk/government/publications/sample-accessibility-statement/sample-accessibility-statement-for-a-fictional-public-sector-website) provided by gov.uk.

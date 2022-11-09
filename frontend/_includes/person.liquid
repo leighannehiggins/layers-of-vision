@@ -119,17 +119,24 @@ layout: base.liquid
     <div class="col-start">
       {% if artistWeb %}
         <p>
-          <a href="//{{ artistWeb }}">{{ artistWeb }}</a>
+          <a href="//{{ artistWeb }}">
+            <span class="sr-only">personal website
+            </span>
+            {{ artistWeb }}</a>
         </p>
       {% endif %}
       {% if artistInsta %}
         <p>
-          <a href="//instagram.com/{{ artistInsta }}">@{{ artistInsta }}</a>
+          <a href="//instagram.com/{{ artistInsta }}">
+            <span class="sr-only">Instagram
+            </span>@{{ artistInsta }}</a>
         </p>
       {% endif %}
       {% if artistTwitter %}
         <p>
-          <a href="//twitter.com/{{ artistTwitter }}">@{{ artistTwitter }}</a>
+          <a href="//twitter.com/{{ artistTwitter }}">
+            <span class="sr-only">Twitter
+            </span>@{{ artistTwitter }}</a>
         </p>
       {% endif %}
     </div>
