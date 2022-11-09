@@ -37,6 +37,10 @@ following formats: printed text, large text, braille, and audio descriptions. QR
   <figcaption>Listen to Dr. Anica Zeyen decsribe the exhibition</figcaption>
 </figure>
 
+<div class="transcript-btn">
+  <a href="{{ '/assets/transcript/exhibition_page_transcript.docx' | url }}" class="button small">Download transcript</a>
+</div>
+
 ## Floorplan
 
 <div class="map" id="floorplan">
