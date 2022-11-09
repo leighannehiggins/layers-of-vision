@@ -127,6 +127,11 @@ layout: base.liquid
           <a href="//instagram.com/{{ artistInsta }}">@{{ artistInsta }}</a>
         </p>
       {% endif %}
+      {% if artistTwitter %}
+        <p>
+          <a href="//twitter.com/{{ artistTwitter }}">@{{ artistTwitter }}</a>
+        </p>
+      {% endif %}
     </div>
     <div class="col-auto">
       {{ content }}

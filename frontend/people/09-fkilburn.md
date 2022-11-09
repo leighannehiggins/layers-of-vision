@@ -3,12 +3,15 @@ firstName: Fae
 lastName: Kilburn
 artistWeb: artistWebsite.ext
 artistInsta: artistInstaHandle
+artistTwitter: artistTwitterHandle
 workImage: /assets/img/artists/placeholder.jpg
 altText: this will be the alt text of the image linked above
 workImage2:
 altText2:
 workImage3:
 altText3:
+workImage4:
+altText4:
 workVideoMp4:
 workVideoWebm:
 workVideoCaption:
