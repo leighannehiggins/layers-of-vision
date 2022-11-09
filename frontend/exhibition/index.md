@@ -34,7 +34,7 @@ following formats: printed text, large text, braille, and audio descriptions. QR
   <audio controls src="{{ '/assets/audio/LoV_exhibition_page_audio.mp3' | url }}">
 	<a href="{{ '/assets/audio/LoV_exhibition_page_audio.mp3' | url }}">Download audio</a>
   </audio>
-  <figcaption>Listen to Dr. Anica Zeyen decsribe the exhibition</figcaption>
+  <figcaption>Listen to Dr. Katharina Husemann describe the exhibition</figcaption>
 </figure>
 
 <div class="transcript-btn">
