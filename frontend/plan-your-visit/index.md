@@ -1,7 +1,7 @@
 ---
-title: Visitors info
+title: Plan your visit
 eleventyNavigation:
-  key: Visitors info
+  key: Plan your visit
   parent: Header
   order: 4
 ---
