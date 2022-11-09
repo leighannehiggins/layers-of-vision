@@ -17,7 +17,7 @@ We’ve also made the website text as simple as possible to understand.
 
 ## Reporting accessibility problems with this website
 
-Please email <a href="mailto:katharina.husemann@kcl.ac.uk">katharina.husemann@kcl.ac.uk</a> with details of the problems.
+Report accessibility problems with this website to <a href="mailto:katharina.husemann@kcl.ac.uk">katharina.husemann@kcl.ac.uk</a>.
 
 ## Compliance status
 

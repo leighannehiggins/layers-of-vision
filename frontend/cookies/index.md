@@ -5,4 +5,4 @@ eleventyNavigation:
   order: 7
 ---
 
-Lorem ipsum
+No cookies are stored on the site.

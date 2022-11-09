@@ -43,6 +43,8 @@ following formats: printed text, large text, braille, and audio descriptions. QR
 
 ## Floorplan
 
+Hover over the floorplan to get a feel for the gallery space. Click on the squares in the floorplan to learn more about the artists and artworks in Layers of Vision.
+
 <div class="map" id="floorplan">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1670.6 686.2">
 <title>Floorplan map</title>
