@@ -29,6 +29,10 @@ eleventyNavigation:
   <figcaption>Listen to welcome message</figcaption>
 </figure>
 
+<div class="transcript-btn">
+  <a href="{{ '/assets/transcript/landing_page_welcome.docx' | url }}" class="button small">Download transcript</a>
+</div>
+
 <!-- Video block -->
 <figure>
   <video controls>
