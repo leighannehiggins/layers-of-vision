@@ -23,10 +23,10 @@ eleventyNavigation:
 
 <!-- Audio block -->
 <figure>
-  <audio controls src="/media/file.mp3">
-    <a href="/media/file.mp3">Download audio</a>
+  <audio controls src="{{ '/assets/audio/LoV_landing_page_audio.mp3' | url }}">
+    <a href="{{ '/assets/audio/LoV_exhibition_landing_audio.mp3' | url }}">Download audio</a>
   </audio>
-  <figcaption>Listen to lorem ipsum dolor</figcaption>
+  <figcaption>Listen to welcome message</figcaption>
 </figure>
 
 <!-- Video block -->

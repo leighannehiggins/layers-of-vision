@@ -6,9 +6,26 @@ eleventyNavigation:
   order: 4
 ---
 
-## How to get here
+<!-- ## How to get here-->
 
-Lorem ipsum
+## When
+
+Layers of Vision is open to the public from 21st November to 16th December, coinciding with UK Disability History Month.
+Mo – Fr: 10am to 6pm
+
+## Where
+
+Find us in the Arcade at Bush House, South Wing, King’s College London, Strand, WC2B 4PJ.
+What3Words: https://w3w.co/goats.fees.noises
+
+Tube: Temple / Bus: 4, 26, 59, 68, 76, X68, 168, 171, 172,
+176 (24 hour), 188, 243 (24 hour), 341 (24 hour), 521, RV1. Info about the Photo
+
+Free, no booking required.
+
+Information about the artworks is available in large print, braille and via audio-descriptions. Access to the building is via a ramp / slope. Assistance dogs are always welcome. This venue does not play background music. The lighting levels are medium. Accessible toilet facilities are on site.
+
+By visiting the exhibition, you agree to be photographed and filmed. Photos and video material may be used for educational and promotional purposes of the exhibition. It may be shared, among others, on King’s College London social media pages, King’s College London website, press publications, printed publicity. Anonymized photos may be used in research publications. If you wish to not be photographed and filmed, please inform the exhibition invigilators on site in the gallery.
 
 <!-- Audio block -->
 <figure>
