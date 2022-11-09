@@ -29,7 +29,7 @@ This statement was prepared on 9 November 2022. It was **last reviewed on 9 Nove
 
 This website was last tested on 7 November 2022. The test was carried out by KDL.
 
-These tools used to ensure the pages comply with WCAG ver 2.1 AA standard are:
+These tools were used to ensure the pages comply with WCAG ver 2.1 AA standard are:
 
 - [Siteimprove accessibility checker](https://www.siteimprove.com/toolkit/accessibility-checker/)
 - [Lighthouse](https://github.com/GoogleChrome/lighthouse)
