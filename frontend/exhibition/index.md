@@ -27,7 +27,7 @@ experience the artworks.
 <p class="fake"><span class="button inverted">Find</span></p>
 
 close to each artwork a station that holds information on the artwork in
-following formats: printed text, large text, braille, and audio descriptions. QR codes will lead you to each artworks’ digital presence.
+following formats: printed text, large text, braille, and audio descriptions. QR codes will lead you to each artworks' digital presence.
 
 <!-- Audio block -->
 <figure>
@@ -70,4 +70,11 @@ Hover over the floorplan to get a feel for the gallery space. Click on the squar
 
 ## Acknowledgements
 
-Layers of Vision is devised by Dr Katharina C. Husemann (King’s Business School), Dr Anica Zeyen (Royal Holloway, University of London) and Dr Leighanne Higgins (Lancaster University Management School). It is based on their ongoing research in which they explore how museums in the UK make their art collections accessible to blind and partially sighted visitors. Layers of Vision is presented by King’s Business School with funding from its Innovation Fund. The exhibition is supported and produced by King’s Culture and the project website by King’s Digital Lab.
+**Curational Support and Access Advice:** Shape Arts and Zoe Partington<br>
+**Design:** Praline<br>
+**Build:** MER Services and Whitewall<br>
+**Graphics:** Praline<br>
+**Audio:** Sam Beer Sound<br>
+**Website:** Praline and King's Digital Lab
+
+_Layers of Vision_ is an exhibition devised by Dr Katharina C. Husemann (King's Business School), Dr Anica Zeyen (Royal Holloway, University of London) and Dr Leighanne Higgins (Lancaster University Management School). It is based on their ongoing research in which they explore how museums in the UK make their art collections accessible to blind and partially sighted visitors. Layers of Vision is presented by King's Business School with funding from its Innovation Fund. The exhibition is supported and produced by King's Culture and the project website by King's Digital Lab.
