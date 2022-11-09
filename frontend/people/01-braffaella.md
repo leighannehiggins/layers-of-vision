@@ -1,8 +1,8 @@
 ---
 firstName: Bianca
 lastName: Raffaella
-artistWeb: artistWebsite.ext
-artistInsta: artistInstaHandle
+artistWeb: biancarafaella.com
+artistInsta: b_raffaella92
 workImage: /assets/img/artists/placeholder.jpg
 altText: this will be the alt text of the image linked above
 workImage2:
@@ -14,15 +14,14 @@ workVideoWebm:
 workVideoCaption:
 workTitle: In The Rose Garden
 year: 2022
-workType: Installation of 3D prints and scaffolding
-workSize: 250cm x 200cm x 100cm
-workDescription: This installation is a triptych of scaled down 3D printed figures of the artist moving through a delineated space. Using the accuracy of digital technology, this piece grants access for the first time for the blind artist to his own body. The figures are framed with layers of scaffolding that are a parody of gallery casements. Through granting every visitor, sight disabled or otherwise, access to the touchable figures, it offers something close to equality of experience.
-audioLink: fullUrlforAudio
+workType: Collage installation of tissue paper and acrylic on four canvases
+workSize: 90 × 65 × 1 cm each
+workDescription: In The Rose Garden is a polyptych image of a wild rose bush. The coloured image on the top left shows the rosebush how Bianca sees it through her left eye. The coloured image on the top right pictures the rosebush through her right eye. White versions of the same rosebush images sit below the coloured ones and represent what it is like to rely on touch but no vision. This artwork challenges the traditional and the inaccessible in the contemporary visual arts.
+audioLink: /assets/audio/
 transcriptLink: fullUrlforTranscript
 order: 1
 teams:
   - artists
 ---
 
-This is the bio text.
-Lorem ipsum
+Bianca Raffaella is a London-based fine artist. Graduating with a First Class (honours) degree 2016, where she was the first registered blind student to graduate from Kingston University with a degree in the Visual Arts. Since then, Raffaella has travelled internationally delivering lectures and contributing to interdisciplinary projects such as a collaboration with Institut Français de la Mode (IFM), where Raffaella was an invited fashion designer along with CHANEL to work with MA students on a collaborative fashion marketing project for a sensory fashion collection. In 2016 – 2018 Raffaella was selected as a keynote speaker for the ‘Beyond Seeing’ project at the Goethe Institute in Paris, where she presented her work and design methods to a group of international, fully-sighted, blind and visually impaired students and lecturers in 2019, Raffaella was awarded the NatWest Entrepreneurship Funding Prize for a bespoke sensory fashion label. 2022 - 2023 Raffaella will be exhibiting her first solo show, titled ‘Hushed Impressions’ at Orleans House Gallery, as part of an emerging artist residency program. ‘Hushed Impressions’ will be a multi-sensory exhibition focused on accessibility in the visual arts.
