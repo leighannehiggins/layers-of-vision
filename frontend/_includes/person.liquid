@@ -50,17 +50,39 @@ layout: base.liquid
     </div>
   </div>
 
-  <!-- Audio block -->
-  <figure>
-    <audio controls src="{{ audioLink | url }}">
-      <a href="{{ audioLink | url }}">Download audio</a>
-    </audio>
-    <figcaption>Listen to lorem ipsum dolor</figcaption>
-  </figure>
+  {% if audioLink %}
+    <!-- Audio block -->
+    <figure>
+      <audio controls src="{{ audioLink | url }}">
+        <a href="{{ audioLink | url }}">Download audio</a>
+      </audio>
+      <figcaption>Listen to lorem ipsum dolor</figcaption>
+    </figure>
+  {% endif %}
 
-  <div class="transcript-btn">
-    <a href="{{ transcriptLink | url }}" class="button small">Download transcript</a>
-  </div>
+  {% if transcriptLink %}
+    <div class="transcript-btn">
+      <a href="{{ transcriptLink | url }}" class="button small">Download transcript</a>
+    </div>
+  {% endif %}
+
+  {% if workVideo %}
+    <!-- Video block -->
+    <figure>
+      <video controls>
+        <source src="{{ workVideoWebm }}" type="video/webm">
+        <source src="{{ workVideoMp4 }}" type="video/mp4">
+        Download the
+        <a href="{{ workVideoWebm }}">WEBM</a>
+        or
+        <a href="{{ workVideoMp4 }}">MP4</a>
+        video.
+      </video>
+      {% if workVideoCaption %}
+        <figcaption>workVideoCaption</figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
 
   <figure>
     <img src="{{ workImage | url }}" alt="{{ altText }}">
@@ -74,17 +96,28 @@ layout: base.liquid
     </figure>
   {% endif %}
 
+  {% if workImage3 %}
+    <figure>
+      <img src="{{ workImage3 | url }}" alt="{{ altText3 }}">
+      <figcaption aria-hidden="true">{{ altText3 }}</figcaption>
+    </figure>
+  {% endif %}
+
   <a href="{{ '/exhibition/#floorplan' | url }}" class="button small">View Floorplan</a>
 
   <h2>Artist Bio</h2>
   <div class="row-full">
     <div class="col-start">
-      <p>
-        <a href="//{{ artistWeb }}">{{ artistWeb }}</a>
-      </p>
-      <p>
-        <a href="//instagram.com/{{ artistInsta }}">@{{ artistInsta }}</a>
-      </p>
+      {% if artistWeb %}
+        <p>
+          <a href="//{{ artistWeb }}">{{ artistWeb }}</a>
+        </p>
+      {% endif %}
+      {% if artistInsta %}
+        <p>
+          <a href="//instagram.com/{{ artistInsta }}">@{{ artistInsta }}</a>
+        </p>
+      {% endif %}
     </div>
     <div class="col-auto">
       {{ content }}

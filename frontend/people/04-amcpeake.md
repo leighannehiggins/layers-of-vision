@@ -5,6 +5,13 @@ artistWeb: artistWebsite.ext
 artistInsta: artistInstaHandle
 workImage: /assets/img/artists/placeholder.jpg
 altText: this will be the alt text of the image linked above
+workImage2:
+altText2:
+workImage3:
+altText3:
+workVideoMp4:
+workVideoWebm:
+workVideoCaption:
 workTitle: Subjective Acuity
 year: 2022
 workType: Installation of 3D prints and scaffolding
