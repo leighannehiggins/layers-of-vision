@@ -34,7 +34,7 @@ following formats: printed text, large text, braille, and audio descriptions. QR
   <audio controls src="{{ '/assets/audio/LoV_exhibition_page_audio.mp3' | url }}">
 	<a href="{{ '/assets/audio/LoV_exhibition_page_audio.mp3' | url }}">Download audio</a>
   </audio>
-  <figcaption>Listen to Dr. Anica Zeyen decsribe the exhibition</figcaption>
+  <figcaption>Listen to Dr. Katharina Husemann describe the exhibition</figcaption>
 </figure>
 
 <div class="transcript-btn">
@@ -65,3 +65,7 @@ following formats: printed text, large text, braille, and audio descriptions. QR
 <a xlink:href="../people/10-djohnson/" xlink:title="David Johnson - I as Object Un-Seen"><polygon class="secondary-color" points="791.3,314.8 646.3,314.8 646.3,433.7 790.8,433.7"/></a>
 </svg>
 </div>
+
+## Acknowledgements
+
+Layers of Vision is devised by Dr Katharina C. Husemann (King’s Business School), Dr Anica Zeyen (Royal Holloway, University of London) and Dr Leighanne Higgins (Lancaster University Management School). It is based on their ongoing research in which they explore how museums in the UK make their art collections accessible to blind and partially sighted visitors. Layers of Vision is presented by King’s Business School with funding from its Innovation Fund. The exhibition is supported and produced by King’s Culture and the project website by King’s Digital Lab.
