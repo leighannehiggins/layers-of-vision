@@ -34,6 +34,7 @@ eleventyNavigation:
 </div>
 
 <!-- Video block -->
+<!-- To be added later
 <figure>
   <video controls>
     <source src="/media/video.webm" type="video/webm">
@@ -43,6 +44,7 @@ eleventyNavigation:
   </video>
   <figcaption>Alt text goes here</figcaption>
 </figure>
+-->
 
 <h2>Where we are</h2>
 
