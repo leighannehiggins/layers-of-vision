@@ -30,7 +30,7 @@ eleventyNavigation:
 </figure>
 
 <div class="transcript-btn">
-  <a href="{{ '/assets/transcript/landing_page_welcome.docx' | url }}" class="button small">Download transcript</a>
+  <a href="{{ '/assets/transcript/homepage_welcome_transcript.docx' | url }}" class="button small">Download transcript</a>
 </div>
 
 <!-- Video block -->

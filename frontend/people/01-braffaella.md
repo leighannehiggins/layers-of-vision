@@ -18,7 +18,7 @@ workType: Collage installation of tissue paper and acrylic on four canvases
 workSize: 90 × 65 × 1 cm each
 workDescription: In The Rose Garden is a polyptych image of a wild rose bush. The coloured image on the top left shows the rosebush how Bianca sees it through her left eye. The coloured image on the top right pictures the rosebush through her right eye. White versions of the same rosebush images sit below the coloured ones and represent what it is like to rely on touch but no vision. This artwork challenges the traditional and the inaccessible in the contemporary visual arts.
 audioLink: /assets/audio/
-transcriptLink: fullUrlforTranscript
+transcriptLink: /assets/transcript/
 order: 1
 teams:
   - artists
