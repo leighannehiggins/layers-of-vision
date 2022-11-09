@@ -84,10 +84,12 @@ layout: base.liquid
     </figure>
   {% endif %}
 
-  <figure>
-    <img src="{{ workImage | url }}" alt="{{ altText }}">
-    <figcaption aria-hidden="true">{{ altText }}</figcaption>
-  </figure>
+  {% if workImage %}
+    <figure>
+      <img src="{{ workImage | url }}" alt="{{ altText }}">
+      <figcaption aria-hidden="true">{{ altText }}</figcaption>
+    </figure>
+  {% endif %}
 
   {% if workImage2 %}
     <figure>
@@ -100,6 +102,13 @@ layout: base.liquid
     <figure>
       <img src="{{ workImage3 | url }}" alt="{{ altText3 }}">
       <figcaption aria-hidden="true">{{ altText3 }}</figcaption>
+    </figure>
+  {% endif %}
+
+  {% if workImage4 %}
+    <figure>
+      <img src="{{ workImage4 | url }}" alt="{{ altText4 }}">
+      <figcaption aria-hidden="true">{{ altText4 }}</figcaption>
     </figure>
   {% endif %}
 
