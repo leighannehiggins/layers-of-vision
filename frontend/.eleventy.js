@@ -68,6 +68,6 @@ module.exports = function (config) {
     (s) => stripHtml.stripHtml(s).result.substring(0, 200) + "..."
   );
   return {
-    pathPrefix: "/layers-of-vision/",
+    pathPrefix: "",
   };
 };
