@@ -22,6 +22,9 @@ module.exports = function (config) {
   config.addPassthroughCopy("assets/transcript");
   config.addPassthroughCopy("assets/video");
 
+  // copying CNAME file to make the custom domain persistent
+  config.addPassthroughCopy("CNAME");
+
   // just copy the admin folder as is to the static site _site
   // config.addPassthroughCopy("admin");
 
