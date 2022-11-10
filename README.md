@@ -14,3 +14,13 @@ Layers of Vision is an art exhibition that explores the experiences and perspect
 ## For editors
 
 Docs on how to add and update content is available in the [Wiki](https://github.com/kingsdigitallab/layers-of-vision/wiki/Wiki-for-Editors).
+
+## Release notes
+
+### 0.1
+
+- Initial release
+
+### 0.2
+
+- Removed floorplan from exhibition page
