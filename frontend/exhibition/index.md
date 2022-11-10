@@ -41,6 +41,7 @@ following formats: printed text, large text, braille, and audio descriptions. QR
   <a href="{{ '/assets/transcript/exhibition_page_transcript.docx' | url }}" class="button small">Download transcript</a>
 </div>
 
+<!--
 ## Floorplan
 
 Hover over the floorplan to get a feel for the gallery space. Click on the squares in the floorplan to learn more about the artists and artworks in Layers of Vision.
@@ -67,6 +68,8 @@ Hover over the floorplan to get a feel for the gallery space. Click on the squar
 <a xlink:href="../people/10-djohnson/" xlink:title="David Johnson - I as Object Un-Seen"><polygon class="secondary-color" points="791.3,314.8 646.3,314.8 646.3,433.7 790.8,433.7"/></a>
 </svg>
 </div>
+
+-->
 
 ## Acknowledgements
 
