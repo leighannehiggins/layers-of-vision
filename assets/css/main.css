@@ -411,6 +411,10 @@ figure img {
   fill: var(--secondary);
 }
 
+iframe {
+  margin-top: 2rem;
+}
+
 [style*="--aspect-ratio"] > :first-child {
   width: 100%;
 }
