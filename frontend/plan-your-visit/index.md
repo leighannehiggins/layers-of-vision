@@ -30,18 +30,16 @@ Free, no booking required.
 Information about the artworks is available in large print, braille and via audio-descriptions. Access to the building is via a ramp / slope. Assistance dogs are always welcome. This venue does not play background music. The lighting levels are medium. Accessible toilet facilities are on site.
 
 <!-- Audio block -->
-<!-- to be updated once the audio is available
 <figure>
-  <audio controls src="/media/file.mp3">
-    <a href="/media/file.mp3">Download audio</a>
+  <audio controls src="{{ '/assets/audio/how-to-get-there.m4a' | url }}">
+    <a href="{{ '/assets/audio/how-to-get-there.m4a' | url }}">Download audio</a>
   </audio>
-  <figcaption>Listen to lorem ipsum dolor</figcaption>
+  <figcaption>Listen to Dr. Anica Zeyen describe how to get to the exhibition.</figcaption>
 </figure>
 
 <div class="transcript-btn">
-  <a href="{{ '/assets/transcript/landing_page_welcome.docx' | url }}" class="button small">TO DO Download transcript</a>
+  <a href="{{ '/assets/transcript/how-to-get-here.docx' | url }}" class="button small">Download transcript</a>
 </div>
--->
 
 <div style="--aspect-ratio: 4/3;">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.105639456962!2d-0.12591335481755506!3d51.512731474174785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876059db36081a5%3A0x13e84de39ffc689a!2sThe%20Arcade%20at%20Bush%20House!5e0!3m2!1sen!2suk!4v1667843091002!5m2!1sen!2suk" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
