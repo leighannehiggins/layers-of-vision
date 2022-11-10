@@ -491,6 +491,10 @@ figure {
 
 // iframe
 
+iframe {
+  margin-top: 2rem;
+}
+
 [style*="--aspect-ratio"] > :first-child {
   width: 100%;
 }
