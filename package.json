@@ -40,7 +40,8 @@
     "prettier": "^2.6.2",
     "prettier-plugin-sort-imports": "^1.7.0",
     "simple-git-hooks": "^2.8.1",
-    "vscode-langservers-extracted": "^4.5.0"
+    "vscode-langservers-extracted": "^4.5.0",
+    "socket.io-parser": ">=4.2.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
