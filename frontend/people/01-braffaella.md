@@ -2,8 +2,8 @@
 firstName: Bianca
 lastName: Raffaella
 artistWeb: biancaraffaella.com
-artistInsta: biancaraffaella
-artistTwitter:
+artistInsta: @biancaraffaella
+artistTwitter:@b_raffaella92
 workImage: /assets/img/Bianca.jpg
 altText: this will be the alt text of the image linked above
 workImage2:
