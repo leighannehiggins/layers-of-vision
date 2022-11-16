@@ -1,8 +1,8 @@
 ---
 firstName: Mickel
 lastName: Smithen
-artistWeb:
-artistInsta:
+artistWeb: www.ebonyrose.net
+artistInsta:@ebony_rose_dark
 artistTwitter:
 workImage:
 altText:
@@ -20,8 +20,8 @@ year: 2022
 workType:
 workSize:
 workDescription:
-audioLink:
-transcriptLink:
+audioLink:/assets/audio/2.Mickel.mp3
+transcriptLink:/assets/transcript/MickelADTranscript.docx
 order: 2
 teams:
   - artists
