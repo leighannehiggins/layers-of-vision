@@ -5,7 +5,7 @@ artistWeb: biancaraffaella.com
 artistInsta: @biancaraffaella
 artistTwitter:@b_raffaella92
 workImage: /assets/img/Bianca.jpg
-altText: A hand explores a canvas with textures built up through soft sponged marks and relief tissue paper, depicting roses and leaves. The painting is washed in a warm glow of pale pinks, yellows and touches of green. 
+altText: Four canvases, two white and two yellowed in colour. Each canvas has textures built up through soft sponged marks and relief tissue paper, depicting roses and leaves. 
 workImage2:
 altText2:
 workImage3:
